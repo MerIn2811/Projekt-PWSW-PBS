@@ -1,10 +1,10 @@
-#Projekt-PWSW-PBS
+# Projekt-PWSW-PBS
 Project for uni. Nothing to see here
 
-##TEMAT: PLANOWANIE DZIALAN I ANALIZA EFEKTYWNOSCI
+## TEMAT: PLANOWANIE DZIALAN I ANALIZA EFEKTYWNOSCI
 Opis: To be paced
 
-##CO JEST DO ZROBIENIA
+## CO JEST DO ZROBIENIA
 1.Specyfikacja wymagan 
   - opis aplikacji: BloomPlan / Aureum
   - zakres fuckcionalnosci realizowanej przez aplikace
@@ -18,7 +18,7 @@ Opis: To be paced
 3.Dzialajaca aplikacja
   - NAPISAC APKE
 
-##PLAN PRACY I PODZIAL
+## PLAN PRACY I PODZIAL
 |nr|termin|Weronika|Wiktoria|
 |---|---|---|
 |1|20.10.25|design apki|specyfikacja wymagan|
