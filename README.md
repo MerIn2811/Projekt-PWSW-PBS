@@ -19,8 +19,8 @@ Opis: To be paced
   - NAPISAC APKE
 
 ## PLAN PRACY I PODZIAL
-|nr|termin|Weronika|Wiktoria|
-|---|---|---|
+| nr | termin |Weronika |Wiktoria |
+|---|---|---|---|
 |1|20.10.25|design apki|specyfikacja wymagan|
 |2|x|x|x|
 |3|x|x|x|
