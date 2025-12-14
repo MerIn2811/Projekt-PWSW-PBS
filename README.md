@@ -5,7 +5,6 @@ Project for uni. Nothing to see here
 Opis: To be paced
 
 ## CO JEST DO ZROBIENIA
-APLIKACJA DESCTOPOWA
 1.Specyfikacja wymagan 
   - opis aplikacji: BloomPlan / Aureum
   - zakres fuckcionalnosci realizowanej przez aplikace
