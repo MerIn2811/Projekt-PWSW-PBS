@@ -1,23 +1,29 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using PWSW_Project_todo_calendar.Pages;
 
-namespace PWSW_Project_todo_calendar;
-
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
-public partial class MainWindow : Window
+namespace PWSW_Project_todo_calendar
 {
-    public MainWindow()
+    public partial class MainWindow : Window
     {
-        InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+            MainFrame.Navigate(new HomePage());
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new HomePage());
+        }
+
+        private void AddGoal_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new AddGoalPage());
+        }
+
+        private void Menu_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new MenuPage());
+        }
     }
 }

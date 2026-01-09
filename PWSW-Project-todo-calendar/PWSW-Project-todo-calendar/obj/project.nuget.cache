@@ -1,8 +1,1057 @@
 {
   "version": 2,
-  "dgSpecHash": "4Am4NXCz2VM=",
+  "dgSpecHash": "dWmorA5SEE8=",
   "success": true,
   "projectFilePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Weronika\\.nuget\\packages\\documentformat.openxml\\3.3.0\\documentformat.openxml.3.3.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\documentformat.openxml.framework\\3.3.0\\documentformat.openxml.framework.3.3.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\extended.wpf.toolkit\\5.0.0\\extended.wpf.toolkit.5.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\harfbuzzsharp\\8.3.0.1\\harfbuzzsharp.8.3.0.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\8.3.0.1\\harfbuzzsharp.nativeassets.macos.8.3.0.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\8.3.0.1\\harfbuzzsharp.nativeassets.win32.8.3.0.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\livechartscore\\2.0.0-rc5.4\\livechartscore.2.0.0-rc5.4.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\livechartscore.skiasharpview\\2.0.0-rc5.4\\livechartscore.skiasharpview.2.0.0-rc5.4.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\livechartscore.skiasharpview.wpf\\2.0.0-rc5.4\\livechartscore.skiasharpview.wpf.2.0.0-rc5.4.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.antiforgery\\1.0.0-rc1-final\\microsoft.aspnet.antiforgery.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.authorization\\1.0.0-rc1-final\\microsoft.aspnet.authorization.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.cors\\6.0.0-rc1-final\\microsoft.aspnet.cors.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.cryptography.internal\\1.0.0-rc1-final\\microsoft.aspnet.cryptography.internal.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.dataprotection\\1.0.0-rc1-final\\microsoft.aspnet.dataprotection.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.dataprotection.abstractions\\1.0.0-rc1-final\\microsoft.aspnet.dataprotection.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.diagnostics.abstractions\\1.0.0-rc1-final\\microsoft.aspnet.diagnostics.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.fileproviders.abstractions\\1.0.0-rc1-final\\microsoft.aspnet.fileproviders.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.fileproviders.physical\\1.0.0-rc1-final\\microsoft.aspnet.fileproviders.physical.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.hosting.abstractions\\1.0.0-rc1-final\\microsoft.aspnet.hosting.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.html.abstractions\\1.0.0-rc1-final\\microsoft.aspnet.html.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.http.abstractions\\1.0.0-rc1-final\\microsoft.aspnet.http.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.http.extensions\\1.0.0-rc1-final\\microsoft.aspnet.http.extensions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.http.features\\1.0.0-rc1-final\\microsoft.aspnet.http.features.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.jsonpatch\\1.0.0-rc1-final\\microsoft.aspnet.jsonpatch.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.localization\\1.0.0-rc1-final\\microsoft.aspnet.localization.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc\\6.0.0-rc1-final\\microsoft.aspnet.mvc.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.abstractions\\6.0.0-rc1-final\\microsoft.aspnet.mvc.abstractions.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.apiexplorer\\6.0.0-rc1-final\\microsoft.aspnet.mvc.apiexplorer.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.core\\6.0.0-rc1-final\\microsoft.aspnet.mvc.core.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.cors\\6.0.0-rc1-final\\microsoft.aspnet.mvc.cors.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.dataannotations\\6.0.0-rc1-final\\microsoft.aspnet.mvc.dataannotations.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.formatters.json\\6.0.0-rc1-final\\microsoft.aspnet.mvc.formatters.json.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.localization\\6.0.0-rc1-final\\microsoft.aspnet.mvc.localization.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.razor\\6.0.0-rc1-final\\microsoft.aspnet.mvc.razor.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.razor.host\\6.0.0-rc1-final\\microsoft.aspnet.mvc.razor.host.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.mvc.viewfeatures\\6.0.0-rc1-final\\microsoft.aspnet.mvc.viewfeatures.6.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.pageexecutioninstrumentation.interfaces\\1.0.0-rc1-final\\microsoft.aspnet.pageexecutioninstrumentation.interfaces.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.razor\\4.0.0-rc1-final\\microsoft.aspnet.razor.4.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.razor.runtime\\4.0.0-rc1-final\\microsoft.aspnet.razor.runtime.4.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.razor.runtime.precompilation\\4.0.0-rc1-final\\microsoft.aspnet.razor.runtime.precompilation.4.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.routing\\1.0.0-rc1-final\\microsoft.aspnet.routing.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnet.webutilities\\1.0.0-rc1-final\\microsoft.aspnet.webutilities.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.0.0\\microsoft.codeanalysis.analyzers.1.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.codeanalysis.common\\1.1.0-rc1-20151109-01\\microsoft.codeanalysis.common.1.1.0-rc1-20151109-01.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.codeanalysis.csharp\\1.1.0-rc1-20151109-01\\microsoft.codeanalysis.csharp.1.1.0-rc1-20151109-01.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.dnx.compilation.abstractions\\1.0.0-rc1-final\\microsoft.dnx.compilation.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.dnx.compilation.csharp.abstractions\\1.0.0-rc1-final\\microsoft.dnx.compilation.csharp.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.dnx.compilation.csharp.common\\1.0.0-rc1-final\\microsoft.dnx.compilation.csharp.common.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\1.0.0-rc1-final\\microsoft.extensions.caching.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.caching.memory\\1.0.0-rc1-final\\microsoft.extensions.caching.memory.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration\\1.0.0-rc1-final\\microsoft.extensions.configuration.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\1.0.0-rc1-final\\microsoft.extensions.configuration.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration.binder\\1.0.0-rc1-final\\microsoft.extensions.configuration.binder.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\1.0.0-rc1-final\\microsoft.extensions.dependencyinjection.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\1.0.0-rc1-final\\microsoft.extensions.dependencyinjection.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.globalization.cultureinfocache\\1.0.0-rc1-final\\microsoft.extensions.globalization.cultureinfocache.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.localization\\1.0.0-rc1-final\\microsoft.extensions.localization.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\1.0.0-rc1-final\\microsoft.extensions.localization.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\1.0.0-rc1-final\\microsoft.extensions.logging.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.memorypool\\1.0.0-rc1-final\\microsoft.extensions.memorypool.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.optionsmodel\\1.0.0-rc1-final\\microsoft.extensions.optionsmodel.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.platformabstractions\\1.0.0-rc1-final\\microsoft.extensions.platformabstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.primitives\\1.0.0-rc1-final\\microsoft.extensions.primitives.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.webencoders\\1.0.0-rc1-final\\microsoft.extensions.webencoders.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.webencoders.core\\1.0.0-rc1-final\\microsoft.extensions.webencoders.core.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.net.http.headers\\1.0.0-rc1-final\\microsoft.net.http.headers.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\newtonsoft.json\\6.0.6\\newtonsoft.json.6.0.6.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\opentk\\3.3.1\\opentk.3.3.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\opentk.glwpfcontrol\\3.3.0\\opentk.glwpfcontrol.3.3.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp\\3.116.1\\skiasharp.3.116.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp.harfbuzz\\3.116.1\\skiasharp.harfbuzz.3.116.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.116.1\\skiasharp.nativeassets.macos.3.116.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.116.1\\skiasharp.nativeassets.win32.3.116.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp.views.desktop.common\\3.116.1\\skiasharp.views.desktop.common.3.116.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp.views.wpf\\3.116.1\\skiasharp.views.wpf.3.116.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.collections\\4.0.0\\system.collections.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.collections.immutable\\1.1.37\\system.collections.immutable.1.1.37.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.diagnostics.debug\\4.0.0\\system.diagnostics.debug.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.0.0-beta-23516\\system.diagnostics.diagnosticsource.4.0.0-beta-23516.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.diagnostics.tracing\\4.0.0\\system.diagnostics.tracing.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.globalization\\4.0.0\\system.globalization.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.io\\4.0.0\\system.io.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.linq\\4.0.0\\system.linq.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.reflection\\4.0.0\\system.reflection.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.reflection.extensions\\4.0.0\\system.reflection.extensions.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.reflection.metadata\\1.1.0\\system.reflection.metadata.1.1.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.reflection.primitives\\4.0.0\\system.reflection.primitives.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.resources.resourcemanager\\4.0.0\\system.resources.resourcemanager.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.runtime\\4.0.0\\system.runtime.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.runtime.extensions\\4.0.0\\system.runtime.extensions.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.runtime.interopservices\\4.0.0\\system.runtime.interopservices.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.text.encoding\\4.0.0\\system.text.encoding.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.text.encoding.extensions\\4.0.0\\system.text.encoding.extensions.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.threading\\4.0.0\\system.threading.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Antiforgery 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Antiforgery",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Authorization 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Authorization",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Cors 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Cors",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Cryptography.Internal 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Cryptography.Internal",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.DataProtection 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.DataProtection",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.DataProtection.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.DataProtection.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Diagnostics.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Diagnostics.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.FileProviders.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.FileProviders.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.FileProviders.Physical 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.FileProviders.Physical",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Hosting.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Hosting.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Html.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Html.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Http.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Http.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Http.Extensions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Http.Extensions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Http.Features 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Http.Features",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.JsonPatch 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.JsonPatch",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Localization 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Localization",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.Abstractions 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.ApiExplorer 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.ApiExplorer",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.Core 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.Core",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.Cors 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.Cors",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.DataAnnotations 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.DataAnnotations",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.Formatters.Json 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.Formatters.Json",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.Localization 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.Localization",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.Razor 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.Razor",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.Razor.Host 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.Razor.Host",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Mvc.ViewFeatures 6.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc.ViewFeatures",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.PageExecutionInstrumentation.Interfaces 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.PageExecutionInstrumentation.Interfaces",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Razor 4.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Razor",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Razor.Runtime 4.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Razor.Runtime",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Razor.Runtime.Precompilation 4.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Razor.Runtime.Precompilation",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.Routing 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.Routing",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNet.WebUtilities 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.AspNet.WebUtilities",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.CodeAnalysis.Common 1.1.0-rc1-20151109-01' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.CodeAnalysis.Common",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.CodeAnalysis.CSharp 1.1.0-rc1-20151109-01' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.CodeAnalysis.CSharp",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Dnx.Compilation.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Dnx.Compilation.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Dnx.Compilation.CSharp.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Dnx.Compilation.CSharp.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Dnx.Compilation.CSharp.Common 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Dnx.Compilation.CSharp.Common",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Caching.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Caching.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Caching.Memory 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Caching.Memory",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Configuration 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Configuration",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Configuration.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Configuration.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Configuration.Binder 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Configuration.Binder",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.DependencyInjection 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.DependencyInjection",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.DependencyInjection.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Globalization.CultureInfoCache 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Globalization.CultureInfoCache",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Localization 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Localization",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Localization.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Localization.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Logging.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.MemoryPool 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.MemoryPool",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.OptionsModel 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.OptionsModel",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.PlatformAbstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.PlatformAbstractions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.Primitives 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.Primitives",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.WebEncoders 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.WebEncoders",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Extensions.WebEncoders.Core 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Extensions.WebEncoders.Core",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Net.Http.Headers 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Microsoft.Net.Http.Headers",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Newtonsoft.Json 6.0.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'OpenTK 3.3.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "OpenTK",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'OpenTK.GLWpfControl 3.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "OpenTK.GLWpfControl",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'SkiaSharp.Views.WPF 3.116.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "SkiaSharp.Views.WPF",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Collections 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Collections",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Collections.Immutable 1.1.37' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Collections.Immutable",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Diagnostics.Debug 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Diagnostics.Debug",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Diagnostics.DiagnosticSource 4.0.0-beta-23516' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Diagnostics.DiagnosticSource",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Diagnostics.Tracing 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Diagnostics.Tracing",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Globalization 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Globalization",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.IO 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.IO",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Linq 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Linq",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Reflection 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Reflection",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Reflection.Extensions 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Reflection.Extensions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Reflection.Metadata 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Reflection.Metadata",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Reflection.Primitives 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Reflection.Primitives",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Resources.ResourceManager 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Resources.ResourceManager",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Runtime 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Runtime",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Runtime.Extensions 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Runtime.Extensions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Runtime.InteropServices 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Runtime.InteropServices",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Text.Encoding 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Text.Encoding",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Text.Encoding.Extensions 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Text.Encoding.Extensions",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Threading 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }
