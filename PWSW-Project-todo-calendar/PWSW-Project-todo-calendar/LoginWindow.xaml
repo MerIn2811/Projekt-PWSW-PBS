@@ -1,0 +1,29 @@
+﻿<Window x:Class="PWSW_Project_todo_calendar.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Logowanie" Width="420" Height="300"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Zaloguj się" FontSize="20" FontWeight="Bold" />
+
+        <StackPanel Grid.Row="1" Margin="0,16,0,0">
+            <TextBlock Text="Login" />
+            <TextBox x:Name="UsernameBox" Height="28"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="0,10,0,0">
+            <TextBlock Text="Hasło" />
+            <PasswordBox x:Name="PasswordBox" Height="28"/>
+        </StackPanel>
+
+        <Button Grid.Row="3" Content="Zaloguj" Height="34" Margin="0,16,0,16"
+                VerticalAlignment="Top" Click="Login_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,94 @@
+﻿<Page x:Class="PWSW_Project_todo_calendar.Pages.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+      mc:Ignorable="d"
+      Title="HomePage">
+
+    <Grid Background="#FFF7F7F7" Margin="24">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- LEWA KOLUMNA -->
+        <Border Grid.Column="0" Background="LightGray" CornerRadius="6" Padding="10" Margin="0,0,12,0">
+            <StackPanel Width="Auto" Orientation="Vertical">
+                <TextBlock Text="TextBlock" FontSize="14" Height="24" TextAlignment="Center" />
+
+                <StackPanel Height="25" Orientation="Horizontal" Background="LightGray">
+                    <TextBlock Text="TextBlock" FontSize="14" Width="130" TextAlignment="Center" />
+                    <TextBlock Text="TextBlock" FontSize="14" Width="132" TextAlignment="Center" />
+                </StackPanel>
+
+                <StackPanel Height="38" Orientation="Horizontal" Background="LightGray">
+                    <DatePicker Width="130" />
+                    <DatePicker Width="132" />
+                </StackPanel>
+
+                <ScrollViewer Height="420" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical" Background="LightGray">
+                        <!-- przykładowy wiersz (Twój) -->
+                        <StackPanel Height="34" Orientation="Horizontal" Background="LightGray" Width="Auto">
+                            <CheckBox Content="Checkbox" Width="86" FontSize="10" VerticalAlignment="Center" />
+                            <TextBlock Text="TextBlock" FontSize="10" TextAlignment="Center" VerticalAlignment="Center" Width="58" />
+                            <TextBlock Text="TextBlock" FontSize="10" VerticalAlignment="Center" Width="57" />
+                            <Button Content="B" Width="25" Height="25" />
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
+
+        
+        <Border Grid.Column="1" Background="#00FFFFFF" CornerRadius="6" Padding="0" Margin="0,0,12,0">
+            <StackPanel Orientation="Vertical">
+                <Viewbox Stretch="Uniform">
+                    <Calendar/>
+                </Viewbox>
+
+                <Button Content="Więcej statystyk"
+                        Margin="0,12,0,0"
+                        HorizontalAlignment="Center"
+                        Width="136" Height="32"
+                        Click="GoToStats"/>
+                
+                <Border CornerRadius="10" Padding="16" Margin="0,5,0,0">
+                    <StackPanel>
+                        <lvc:PieChart x:Name="StatsPieHome"
+                                      Height="200"
+                                      LegendPosition="Top"
+                                      
+                                      InitialRotation="-90"/>
+                        <TextBlock x:Name="DesignerPlaceholderHome"
+                                   Text="(Podgląd wykresu w runtime)"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Visibility="Collapsed"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+
+        <!-- PRAWA KOLUMNA -->
+        <Border Grid.Column="2" Background="LightGray" CornerRadius="6" Padding="10">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="TextBlock" FontSize="14" TextAlignment="Center" Height="41" />
+
+                <ScrollViewer Height="470" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical" Background="LightGray">
+                        <StackPanel Height="34" Orientation="Horizontal" Background="LightGray" Width="Auto">
+                            <CheckBox Content="Checkbox" Width="86" FontSize="10" VerticalAlignment="Center" />
+                            <TextBlock Text="TextBlock" FontSize="10" TextAlignment="Center" VerticalAlignment="Center" Width="58" />
+                            <TextBlock Text="TextBlock" FontSize="10" VerticalAlignment="Center" Width="57" />
+                            <Button Content="B" Width="25" Height="25" />
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

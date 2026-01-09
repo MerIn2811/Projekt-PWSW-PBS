@@ -1,0 +1,285 @@
+﻿<Page x:Class="PWSW_Project_todo_calendar.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      
+      mc:Ignorable="d"
+      Title="MenuPage" Height="450" Width="800">
+    <Page.Resources>
+        <Style x:Key="LinkButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Foreground" Value="#FF2563EB"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Page.Resources>
+    <Grid Background="#FFF7F7F7" Margin="24">
+        <Border Background="LightGray"
+                CornerRadius="6"
+                Padding="16"
+                HorizontalAlignment="Stretch"
+                MaxWidth="700">
+
+            <Grid>
+                <!-- WIERSZE -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- NAGŁÓWEK -->
+                <TextBlock Grid.Row="0"
+                           Text="Ustawienia"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Margin="0,0,0,12"
+                           HorizontalAlignment="Center" />
+
+                <!-- ZAWARTOŚĆ -->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                        <TextBlock TextAlignment="Center" Text="VIDEO"></TextBlock>
+                        <Grid Margin="0,10,0,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0" Text="Rozdzielczość" VerticalAlignment="Center" />
+                            <ComboBox Grid.Column="1" >
+                                <ComboBoxItem Content="Item1" IsSelected="True" />
+                                <ComboBoxItem Content="Item2"></ComboBoxItem>
+                            </ComboBox>
+                        </Grid>
+                        <Grid Margin="0,0,0,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0" Text="Kolor tła"></TextBlock>
+                            <Border Grid.Column="1"
+                                    Width="36" Height="24"
+                                    CornerRadius="4" BorderBrush="Black" BorderThickness="1"
+                                    Background="{Binding ElementName=BgPreview, Path=Fill}"
+                                    Margin="12,0,0,0">
+                                    <xctk:ColorPicker 
+                                                      Width="40"
+                                                      Height="24"
+                                                      Margin="12,0,0,0"
+                                                      ShowDropDownButton="False"
+                                                      UsingAlphaChannel="False"/>
+                            </Border>
+                        </Grid>
+                        
+                        <Grid Margin="0,0,0,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0">Kolor tła</TextBlock>
+                            <Border Grid.Column="1"
+                                    Width="36" Height="24"
+                                    CornerRadius="4" BorderBrush="Black" BorderThickness="1"
+                                    Background="{Binding ElementName=BgTextPreview, Path=Fill}"
+                                    Margin="12,0,0,0">
+                                    <xctk:ColorPicker 
+                                        Width="40"
+                                        Height="24"
+                                        Margin="12,0,0,0"
+                                        ShowDropDownButton="False"
+                                        UsingAlphaChannel="False"/>
+                            </Border>
+                        </Grid>
+                        
+                        <Grid Margin="0,0,0,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0">Czcionka tekstu</TextBlock>
+                            <ComboBox Grid.Column="1" >
+                                <ComboBoxItem Content="Item1" IsSelected="True" />
+                                <ComboBoxItem Content="Item2"></ComboBoxItem>
+                            </ComboBox>
+                        </Grid>
+                        
+                        <Grid Margin="0,0,0,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0">Czcionka nagłówków</TextBlock>
+                            <ComboBox Grid.Column="1" >
+                                <ComboBoxItem Content="Item1" IsSelected="True" />
+                                <ComboBoxItem Content="Item2"></ComboBoxItem>
+                            </ComboBox>
+                        </Grid>
+                        
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock TextAlignment="Center" Text="CELE"></TextBlock>
+                            <Grid Margin="0,10,0,15">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Dodaj Kategorię" />
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                   
+
+                                    <TextBox Name="TextBox1" Grid.Column="0" Margin="0,0,5,0" />
+                                    <Button Name="AddButton"  Content="Dodaj"
+                                            Click="AddButton_Click" Grid.Column="1" />
+                                </Grid>
+                            </Grid>
+                            <Grid Margin="0,0,0,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0">Kolor skończonego zadania</TextBlock>
+                            <Border Grid.Column="1"
+                                    Width="36" Height="24"
+                                    CornerRadius="4" BorderBrush="Black" BorderThickness="1"
+                                    Background="{Binding ElementName=BgGoalPreview, Path=Fill}"
+                                    Margin="12,0,0,0">
+                                
+                                    <xctk:ColorPicker 
+                                        Width="40"
+                                        Height="24"
+                                        Margin="12,0,0,0"
+                                        ShowDropDownButton="False"
+                                        UsingAlphaChannel="False"/>
+                            </Border>
+                            
+                        </Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock TextAlignment="Center" Grid.Column="0" Text="Kolor priorytetu"></TextBlock>
+                            </Grid>
+                            <Grid Margin="0,0,0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                
+                                <TextBlock Grid.Column="0" Text="Ważne" TextAlignment="Center"></TextBlock>
+                                
+                                <Border Grid.Column="1"
+                                        Width="36" Height="24"
+                                        CornerRadius="4" BorderBrush="Black" BorderThickness="1"
+                                        Background="{Binding ElementName=BgGoalPreview, Path=Fill}"
+                                        Margin="12,0,0,0">
+                                
+                                    <xctk:ColorPicker 
+                                        Width="40"
+                                        Height="24"
+                                        Margin="12,0,0,0"
+                                        ShowDropDownButton="False"
+                                        UsingAlphaChannel="False"/>
+                                </Border>
+                            </Grid>
+                            <Grid Margin="0,0,0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                
+                                <TextBlock Grid.Column="0" Text="Średnie" TextAlignment="Center"></TextBlock>
+                                
+                                <Border Grid.Column="1"
+                                        Width="36" Height="24"
+                                        CornerRadius="4" BorderBrush="Black" BorderThickness="1"
+                                        Background="{Binding ElementName=BgGoalPreview, Path=Fill}"
+                                        Margin="12,0,0,0">
+                                
+                                    <xctk:ColorPicker 
+                                        Width="40"
+                                        Height="24"
+                                        Margin="12,0,0,0"
+                                        ShowDropDownButton="False"
+                                        UsingAlphaChannel="False"/>
+                                </Border>
+                            </Grid>
+                            <Grid Margin="0,0,0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                
+                                <TextBlock Grid.Column="0" Text="Niskie" TextAlignment="Center"></TextBlock>
+                                
+                                <Border Grid.Column="1"
+                                        Width="36" Height="24"
+                                        CornerRadius="4" BorderBrush="Black" BorderThickness="1"
+                                        Background="{Binding ElementName=BgGoalPreview, Path=Fill}"
+                                        Margin="12,0,0,0">
+                                
+                                    <xctk:ColorPicker 
+                                        Width="40"
+                                        Height="24"
+                                        Margin="12,0,0,0"
+                                        ShowDropDownButton="False"
+                                        UsingAlphaChannel="False"/>
+                                </Border>
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="0,15,0,10">
+                            <TextBlock TextAlignment="Center" Text="OPCJE UŻYTKOWNIKA"></TextBlock>
+                        </StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0">
+                                <Button Content="Zmień Hasło" Style="{StaticResource LinkButton}" Click="GoPassword_Click"/>
+                                <Button Content="Zmień Maila" Style="{StaticResource LinkButton}" Click="GoEmail_Click"/>
+                                <Button Content="Zmień obraz użytkownika" Style="{StaticResource LinkButton}" Click="GoAvatar_Click"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+                            <Border
+                                    Width="65"
+                                    Height="65"
+                                    CornerRadius="30"
+                                    BorderBrush="Gray"
+                                    BorderThickness="1">
+
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/../Assets/Images/basicUser.png"
+                                                Stretch="UniformToFill"/>
+                                </Border.Background>
+                                
+                            </Border>
+                                <TextBlock Text="Username" TextAlignment="Center"></TextBlock>
+                            </StackPanel>
+                            
+                        </Grid>
+                        
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
