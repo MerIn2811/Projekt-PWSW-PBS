@@ -22,7 +22,7 @@ public sealed class ApiClient
     {
         var payload = new { login, password };
 
-        using var resp = await _http.PostAsJsonAsync("login", payload); // jeśli endpoint: /api/login
+        using var resp = await _http.PostAsJsonAsync("login", payload);
         var text = await resp.Content.ReadAsStringAsync();
 
         if (!resp.IsSuccessStatusCode)
