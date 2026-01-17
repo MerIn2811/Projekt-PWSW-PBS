@@ -4,6 +4,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+      xmlns:userControl="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
       mc:Ignorable="d"
       Title="HomePage">
 
@@ -24,20 +25,18 @@
                     <TextBlock Text="TextBlock" FontSize="14" Width="132" TextAlignment="Center" />
                 </StackPanel>
 
-                <StackPanel Height="38" Orientation="Horizontal" Background="LightGray">
-                    <DatePicker Width="130" />
-                    <DatePicker Width="132" />
-                </StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <DatePicker Grid.Column="0" />
+                    <DatePicker Grid.Column="1" />
+                </Grid>
 
                 <ScrollViewer Height="420" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                    <StackPanel Orientation="Vertical" Background="LightGray">
-                        <!-- przykładowy wiersz (Twój) -->
-                        <StackPanel Height="34" Orientation="Horizontal" Background="LightGray" Width="Auto">
-                            <CheckBox Content="Checkbox" Width="86" FontSize="10" VerticalAlignment="Center" />
-                            <TextBlock Text="TextBlock" FontSize="10" TextAlignment="Center" VerticalAlignment="Center" Width="58" />
-                            <TextBlock Text="TextBlock" FontSize="10" VerticalAlignment="Center" Width="57" />
-                            <Button Content="B" Width="25" Height="25" />
-                        </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <userControl:GoalRowControl/> 
                     </StackPanel>
                 </ScrollViewer>
             </StackPanel>
@@ -61,7 +60,6 @@
                         <lvc:PieChart x:Name="StatsPieHome"
                                       Height="200"
                                       LegendPosition="Top"
-                                      
                                       InitialRotation="-90"/>
                         <TextBlock x:Name="DesignerPlaceholderHome"
                                    Text="(Podgląd wykresu w runtime)"
@@ -80,11 +78,8 @@
 
                 <ScrollViewer Height="470" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
                     <StackPanel Orientation="Vertical" Background="LightGray">
-                        <StackPanel Height="34" Orientation="Horizontal" Background="LightGray" Width="Auto">
-                            <CheckBox Content="Checkbox" Width="86" FontSize="10" VerticalAlignment="Center" />
-                            <TextBlock Text="TextBlock" FontSize="10" TextAlignment="Center" VerticalAlignment="Center" Width="58" />
-                            <TextBlock Text="TextBlock" FontSize="10" VerticalAlignment="Center" Width="57" />
-                            <Button Content="B" Width="25" Height="25" />
+                        <StackPanel Orientation="Vertical">
+                            <userControl:GoalRowControl/> 
                         </StackPanel>
                     </StackPanel>
                 </ScrollViewer>

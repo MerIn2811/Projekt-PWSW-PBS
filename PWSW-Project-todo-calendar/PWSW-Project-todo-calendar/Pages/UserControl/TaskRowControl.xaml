@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="PWSW_Project_todo_calendar.Pages.UserControl.TaskRowControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
+             mc:Ignorable="d"
+             d:DesignHeight="*" d:DesignWidth="*">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <CheckBox Grid.Column="0" Content="Task" VerticalAlignment="Center" />
+
+            <TextBlock Grid.Column="1" Text="Nazwa celu" FontSize="10"
+                       TextAlignment="Center" VerticalAlignment="Center"/>
+
+            <TextBlock Grid.Column="2" Text="Termin" FontSize="10"
+                       TextAlignment="Center" VerticalAlignment="Center"/>
+
+            <Button Grid.Column="3" Content="⛭" Width="25" Height="25" Click="goToTaskChangeClick"/>
+            
+        </Grid>
+</UserControl>

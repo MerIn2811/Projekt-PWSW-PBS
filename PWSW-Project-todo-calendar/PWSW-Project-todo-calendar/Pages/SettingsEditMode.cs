@@ -5,5 +5,7 @@ public enum SettingsEditMode
     Password,
     Email,
     Username,
-    Avatar
+    Avatar,
+    Goal,
+    Task
 }
