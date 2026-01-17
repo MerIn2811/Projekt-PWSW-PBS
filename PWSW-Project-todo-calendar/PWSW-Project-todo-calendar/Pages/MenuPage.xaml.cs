@@ -12,6 +12,7 @@ public partial class MenuPage : Page
     public MenuPage()
     {
         InitializeComponent();
+        
     }
     
    
@@ -36,7 +37,9 @@ public partial class MenuPage : Page
         }
         else
         {
-            MessageBox.Show("Wpisz tekst do dodania.");
+            MessageBox.Show("Wpisz tekst do dodania.",null, MessageBoxButton.OK, MessageBoxImage.Error );
         }
     }
+    
+    
 }

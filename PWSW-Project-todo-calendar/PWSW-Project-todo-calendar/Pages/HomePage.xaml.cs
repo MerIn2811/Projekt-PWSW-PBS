@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.ComponentModel;
+using System.Windows;
 using System.Windows.Controls;
 using LiveChartsCore;
 using LiveChartsCore.SkiaSharpView;
@@ -10,6 +11,13 @@ namespace PWSW_Project_todo_calendar.Pages
         public HomePage()
         {
             InitializeComponent();
+            
+            if (DesignerProperties.GetIsInDesignMode(this))
+            {
+                DesignerPlaceholderHome.Visibility = Visibility.Visible;
+                StatsPieHome.Visibility = Visibility.Collapsed;
+                return;
+            }
             
             StatsPieHome.Series = new ISeries[]
             {
@@ -41,5 +49,6 @@ namespace PWSW_Project_todo_calendar.Pages
         {
             NavigationService?.Navigate(new StatisticsPage());
         }
+        
     }
 }

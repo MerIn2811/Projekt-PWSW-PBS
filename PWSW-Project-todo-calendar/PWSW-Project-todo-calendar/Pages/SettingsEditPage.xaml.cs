@@ -27,6 +27,8 @@ public partial class SettingsEditPage : Page
             SettingsEditMode.Password => new ChangePasswordContent(),
             SettingsEditMode.Email    => new ChangeEmailContent(),
             SettingsEditMode.Avatar   => new ChangeAvatarContent(),
+            SettingsEditMode.Goal => new ChangeGoalControl(),
+            SettingsEditMode.Task => new ChangeTaskControl(),
             _ => new TextBlock { Text = "Brak widoku." }
         };
     }
@@ -39,7 +41,11 @@ public partial class SettingsEditPage : Page
 
     private void Save_Click(object sender, RoutedEventArgs e)
     {
-        //Dodać zapis odpowiednych danych
-        MessageBox.Show("Zapisano (demo).");
+        MessageBoxResult result = MessageBox.Show("Zapisano (demo).");
+        if (result == MessageBoxResult.OK)
+        {
+            NavigationService?.GoBack();
+        }
+        
     }
 }

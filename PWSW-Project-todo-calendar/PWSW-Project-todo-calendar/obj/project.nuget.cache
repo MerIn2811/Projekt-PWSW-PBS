@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dWmorA5SEE8=",
+  "dgSpecHash": "grPfkAuoueI=",
   "success": true,
   "projectFilePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
   "expectedPackageFiles": [
@@ -54,22 +54,28 @@
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.dnx.compilation.csharp.common\\1.0.0-rc1-final\\microsoft.dnx.compilation.csharp.common.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\1.0.0-rc1-final\\microsoft.extensions.caching.abstractions.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.caching.memory\\1.0.0-rc1-final\\microsoft.extensions.caching.memory.1.0.0-rc1-final.nupkg.sha512",
-    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration\\1.0.0-rc1-final\\microsoft.extensions.configuration.1.0.0-rc1-final.nupkg.sha512",
-    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\1.0.0-rc1-final\\microsoft.extensions.configuration.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.2\\microsoft.extensions.configuration.10.0.2.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.2\\microsoft.extensions.configuration.abstractions.10.0.2.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration.binder\\1.0.0-rc1-final\\microsoft.extensions.configuration.binder.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.2\\microsoft.extensions.configuration.fileextensions.10.0.2.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.2\\microsoft.extensions.configuration.json.10.0.2.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\1.0.0-rc1-final\\microsoft.extensions.dependencyinjection.1.0.0-rc1-final.nupkg.sha512",
-    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\1.0.0-rc1-final\\microsoft.extensions.dependencyinjection.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.2\\microsoft.extensions.fileproviders.abstractions.10.0.2.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.2\\microsoft.extensions.fileproviders.physical.10.0.2.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.2\\microsoft.extensions.filesystemglobbing.10.0.2.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.globalization.cultureinfocache\\1.0.0-rc1-final\\microsoft.extensions.globalization.cultureinfocache.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.localization\\1.0.0-rc1-final\\microsoft.extensions.localization.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\1.0.0-rc1-final\\microsoft.extensions.localization.abstractions.1.0.0-rc1-final.nupkg.sha512",
-    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\1.0.0-rc1-final\\microsoft.extensions.logging.abstractions.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.memorypool\\1.0.0-rc1-final\\microsoft.extensions.memorypool.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.optionsmodel\\1.0.0-rc1-final\\microsoft.extensions.optionsmodel.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.platformabstractions\\1.0.0-rc1-final\\microsoft.extensions.platformabstractions.1.0.0-rc1-final.nupkg.sha512",
-    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.primitives\\1.0.0-rc1-final\\microsoft.extensions.primitives.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.2\\microsoft.extensions.primitives.10.0.2.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.webencoders\\1.0.0-rc1-final\\microsoft.extensions.webencoders.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.webencoders.core\\1.0.0-rc1-final\\microsoft.extensions.webencoders.core.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.net.http.headers\\1.0.0-rc1-final\\microsoft.net.http.headers.1.0.0-rc1-final.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\mysqlconnector\\2.5.0\\mysqlconnector.2.5.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\newtonsoft.json\\6.0.6\\newtonsoft.json.6.0.6.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\opentk\\3.3.1\\opentk.3.3.1.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\opentk.glwpfcontrol\\3.3.0\\opentk.glwpfcontrol.3.3.0.nupkg.sha512",
@@ -87,6 +93,7 @@
     "C:\\Users\\Weronika\\.nuget\\packages\\system.globalization\\4.0.0\\system.globalization.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.io\\4.0.0\\system.io.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.io.pipelines\\10.0.2\\system.io.pipelines.10.0.2.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.linq\\4.0.0\\system.linq.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.reflection\\4.0.0\\system.reflection.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.reflection.extensions\\4.0.0\\system.reflection.extensions.4.0.0.nupkg.sha512",
@@ -98,6 +105,8 @@
     "C:\\Users\\Weronika\\.nuget\\packages\\system.runtime.interopservices\\4.0.0\\system.runtime.interopservices.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.text.encoding\\4.0.0\\system.text.encoding.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.text.encoding.extensions\\4.0.0\\system.text.encoding.extensions.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.text.encodings.web\\10.0.2\\system.text.encodings.web.10.0.2.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.text.json\\10.0.2\\system.text.json.10.0.2.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.threading\\4.0.0\\system.threading.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
@@ -588,30 +597,6 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "Package 'Microsoft.Extensions.Configuration 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "warningLevel": 1,
-      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "libraryId": "Microsoft.Extensions.Configuration",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "message": "Package 'Microsoft.Extensions.Configuration.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "warningLevel": 1,
-      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "libraryId": "Microsoft.Extensions.Configuration.Abstractions",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
       "message": "Package 'Microsoft.Extensions.Configuration.Binder 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
       "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
       "warningLevel": 1,
@@ -629,18 +614,6 @@
       "warningLevel": 1,
       "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
       "libraryId": "Microsoft.Extensions.DependencyInjection",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "message": "Package 'Microsoft.Extensions.DependencyInjection.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "warningLevel": 1,
-      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]
@@ -684,18 +657,6 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "Package 'Microsoft.Extensions.Logging.Abstractions 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "warningLevel": 1,
-      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
       "message": "Package 'Microsoft.Extensions.MemoryPool 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
       "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
       "warningLevel": 1,
@@ -725,18 +686,6 @@
       "warningLevel": 1,
       "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
       "libraryId": "Microsoft.Extensions.PlatformAbstractions",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "message": "Package 'Microsoft.Extensions.Primitives 1.0.0-rc1-final' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "warningLevel": 1,
-      "filePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
-      "libraryId": "Microsoft.Extensions.Primitives",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]

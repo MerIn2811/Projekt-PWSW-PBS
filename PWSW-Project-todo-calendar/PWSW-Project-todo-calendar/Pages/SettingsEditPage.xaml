@@ -29,7 +29,7 @@
                 MaxWidth="540"
                 HorizontalAlignment="Center">
 
-            <!-- TU automatycznie wstawimy właściwy środek -->
+            
             <ContentControl x:Name="ContentHost" Width="500" HorizontalAlignment="Center"/>
         </Border>
 

@@ -67,6 +67,18 @@
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[6.0.0-rc1-final, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [
