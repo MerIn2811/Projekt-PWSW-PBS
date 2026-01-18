@@ -2,5 +2,6 @@
 
 public sealed class GoalsResponse
 {
-    public List<GoalDto> goals { get; set; } = new();
+    public List<GoalDto> getGoals { get; set; } = new();
+    
 }
