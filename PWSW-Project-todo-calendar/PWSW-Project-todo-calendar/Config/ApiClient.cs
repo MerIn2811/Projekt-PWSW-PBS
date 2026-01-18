@@ -67,6 +67,7 @@ public sealed class ApiClient
     public async Task<TasksResponse> TasksAsync(int goalId)
     {
         
+        
         using var resp = await _http.GetAsync($"getTasks?goalId={goalId}");
         var text = await resp.Content.ReadAsStringAsync();
 
@@ -136,5 +137,16 @@ public sealed class ApiClient
         if (!resp.IsSuccessStatusCode)
             throw new Exception($"REGISTER HTTP {(int)resp.StatusCode}: {text}");
     }
+
+    public async Task UpdateAvatarAsync(string avatarUrl)
+    {
+        using var resp = await _http.PostAsJsonAsync("setAvatar", new { avatar = avatarUrl });
+
+        var text = await resp.Content.ReadAsStringAsync();
+
+        if (!resp.IsSuccessStatusCode)
+            throw new Exception($"UPDATE HTTP {(int)resp.StatusCode}\n{text}");
+    }
+
     
 }

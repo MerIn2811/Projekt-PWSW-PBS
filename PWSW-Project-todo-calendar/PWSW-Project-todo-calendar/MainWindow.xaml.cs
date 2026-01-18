@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using OpenTK.Platform.Windows;
 using PWSW_Project_todo_calendar.Config;
 using PWSW_Project_todo_calendar.Pages;
@@ -18,6 +19,11 @@ namespace PWSW_Project_todo_calendar
             AvatarBrush.ImageSource = new BitmapImage(
                 new Uri(UserSession.Avatar));
             Username.Text = UserSession.Username;
+        }
+
+        private void Loaded(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)

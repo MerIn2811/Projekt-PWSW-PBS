@@ -52,7 +52,6 @@ public partial class Register : Window
             if (!string.IsNullOrWhiteSpace(_avatarPath))
             {
                 avatarUrl = await _api.UploadAvatarAsync(_avatarPath);
-                MessageBox.Show("Przesłano obraz do serwera");
             }
 
             await _api.RegisterAsync(mail, pass1, username, avatarUrl);
