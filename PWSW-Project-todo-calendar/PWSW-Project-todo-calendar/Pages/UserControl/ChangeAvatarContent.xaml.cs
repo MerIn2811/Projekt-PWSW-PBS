@@ -3,11 +3,15 @@ using Microsoft.Win32;
 using System;
 using System.Windows;
 using System.Windows.Media.Imaging;
+using PWSW_Project_todo_calendar.Config;
 
 namespace PWSW_Project_todo_calendar.Pages.UserControl;
 
 public partial class ChangeAvatarContent : System.Windows.Controls.UserControl
 {
+    
+    public string? SelectedAvatarPath { get; private set; }
+    
     public ChangeAvatarContent()
     {
         InitializeComponent();
@@ -23,14 +27,17 @@ public partial class ChangeAvatarContent : System.Windows.Controls.UserControl
 
         if (dlg.ShowDialog() == true)
         {
+            
+            SelectedAvatarPath = dlg.FileName;
+            
             var bmp = new BitmapImage();
             bmp.BeginInit();
-            bmp.CacheOption = BitmapCacheOption.OnLoad; // ważne: zwalnia plik po wczytaniu
+            bmp.CacheOption = BitmapCacheOption.OnLoad; 
             bmp.UriSource = new Uri(dlg.FileName);
             bmp.EndInit();
             bmp.Freeze();
 
-            AvatarBrush.ImageSource = bmp; // podmiana avatara
+            AvatarBrush.ImageSource = bmp;
         }
     }
 }
