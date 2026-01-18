@@ -117,6 +117,12 @@ namespace PWSW_Project_todo_calendar
             }
             
         }
-        
+
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+            var register = new Register();
+            register.Show();
+            Close();
+        }
     }
 }
