@@ -1,4 +1,7 @@
-﻿using System.Net.Http;
+﻿using System.IO;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
 
@@ -78,7 +81,7 @@ public sealed class ApiClient
     
     public async Task<SessionCheckResponse> CheckSessionAsync()
     {
-        using var resp = await _http.GetAsync("checker"); // GET
+        using var resp = await _http.GetAsync("checker");
         var text = await resp.Content.ReadAsStringAsync();
 
         if (!resp.IsSuccessStatusCode)
@@ -89,5 +92,49 @@ public sealed class ApiClient
         )!;
     }
     
+    
+    public async Task LogoutAsync()
+    {
+        using var resp = await _http.PostAsync("logout", null);
+        var text = await resp.Content.ReadAsStringAsync();
+        
+        if (!resp.IsSuccessStatusCode)
+            throw new Exception($"SESSION HTTP {(int)resp.StatusCode}: {text}");
+    }
+
+    public async Task<string> UploadAvatarAsync(string filePath)
+    {
+        using var form = new MultipartFormDataContent();
+
+        var bytes = await File.ReadAllBytesAsync(filePath);
+        var fileContent = new ByteArrayContent(bytes);
+        fileContent.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+
+        form.Add(fileContent, "avatar", Path.GetFileName(filePath));
+
+        using var resp = await _http.PostAsync("uploadAvatar", form);
+        var text = await resp.Content.ReadAsStringAsync();
+
+        if (!resp.IsSuccessStatusCode)
+            throw new Exception($"UPLOAD HTTP {(int)resp.StatusCode}: {text}");
+
+        using var doc = JsonDocument.Parse(text);
+        return doc.RootElement.GetProperty("avatarUrl").GetString()!;
+    }
+    
+    public async Task RegisterAsync(string mail, string password, string username, string avatarUrl)
+    {
+        using var resp = await _http.PostAsJsonAsync("register", new
+        {
+            username,
+            mail,
+            password,
+            avatar = avatarUrl  
+        });
+
+        var text = await resp.Content.ReadAsStringAsync();
+        if (!resp.IsSuccessStatusCode)
+            throw new Exception($"REGISTER HTTP {(int)resp.StatusCode}: {text}");
+    }
     
 }

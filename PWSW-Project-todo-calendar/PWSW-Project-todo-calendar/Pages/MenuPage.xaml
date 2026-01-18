@@ -266,7 +266,8 @@
                                     BorderThickness="1">
 
                                 <Border.Background>
-                                    <ImageBrush ImageSource="/../Assets/Images/basicUser.png"
+                                    <ImageBrush 
+                                                x:Name="AvatarImage"
                                                 Stretch="UniformToFill"/>
                                 </Border.Background>
                                 

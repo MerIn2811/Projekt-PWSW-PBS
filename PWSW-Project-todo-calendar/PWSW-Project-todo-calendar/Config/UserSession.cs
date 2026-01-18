@@ -16,4 +16,14 @@ public static class UserSession
         Goals = new();
         TasksByGoal = new();
     }
+    
+    public static void ClearAll()
+    {
+        Token = "";
+        UserId = 0;
+        Username = "";
+        Mail = "";
+        Avatar = "";
+        ClearCache();
+    }
 }

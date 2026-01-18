@@ -2,13 +2,25 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Logowanie" Width="420" Height="300"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        >
+    <Window.Resources>
+        <Style x:Key="LinkButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Foreground" Value="#FF2563EB"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Window.Resources>
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <TextBlock Text="Zaloguj się" FontSize="20" FontWeight="Bold" />
@@ -25,5 +37,14 @@
 
         <Button Grid.Row="3" Content="Zaloguj" Height="34" Margin="0,16,0,16"
                 VerticalAlignment="Top" Click="Login_Click"/>
+        <Grid Grid.Row="4" HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Nie masz konta? " VerticalAlignment="Center" Margin="0,0,10,0"></TextBlock>
+            <Button Grid.Column="1" Content="Zarejestruj się" Style="{StaticResource LinkButton }" Click="Register_Click"  />
+        </Grid>
+        
     </Grid>
 </Window>

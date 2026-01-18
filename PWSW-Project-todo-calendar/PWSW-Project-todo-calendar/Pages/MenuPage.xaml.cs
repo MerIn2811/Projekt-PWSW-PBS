@@ -3,7 +3,9 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using PWSW_Project_todo_calendar.Config;
 
 namespace PWSW_Project_todo_calendar.Pages;
 
@@ -12,7 +14,8 @@ public partial class MenuPage : Page
     public MenuPage()
     {
         InitializeComponent();
-        
+        AvatarImage.ImageSource = new BitmapImage(
+            new Uri(UserSession.Avatar));
     }
     
    
