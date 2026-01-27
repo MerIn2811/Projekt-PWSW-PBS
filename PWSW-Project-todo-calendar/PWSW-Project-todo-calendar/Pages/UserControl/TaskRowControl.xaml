@@ -6,6 +6,8 @@
              xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
              mc:Ignorable="d"
              d:DesignHeight="*" d:DesignWidth="*">
+        
+    <Border x:Name="Colour" Background="LightGray" CornerRadius="6" Padding="4" Margin="5">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50" />
@@ -14,15 +16,16 @@
                 <ColumnDefinition Width="30" />
             </Grid.ColumnDefinitions>
 
-            <CheckBox Grid.Column="0" Content="Task" VerticalAlignment="Center" />
+            <CheckBox Grid.Column="0" x:Name="TaskIsFinished" VerticalAlignment="Center" Checked="Checked" Unchecked="Checked" />
 
-            <TextBlock Grid.Column="1" Text="Nazwa celu" FontSize="10"
+            <TextBlock Grid.Column="1" x:Name="TaskName" Text="Nazwa celu" FontSize="10"
                        TextAlignment="Center" VerticalAlignment="Center"/>
 
-            <TextBlock Grid.Column="2" Text="Termin" FontSize="10"
+            <TextBlock Grid.Column="2" x:Name="EndDateTask" Text="Termin" FontSize="10"
                        TextAlignment="Center" VerticalAlignment="Center"/>
 
             <Button Grid.Column="3" Content="⛭" Width="25" Height="25" Click="goToTaskChangeClick"/>
             
         </Grid>
+    </Border>
 </UserControl>

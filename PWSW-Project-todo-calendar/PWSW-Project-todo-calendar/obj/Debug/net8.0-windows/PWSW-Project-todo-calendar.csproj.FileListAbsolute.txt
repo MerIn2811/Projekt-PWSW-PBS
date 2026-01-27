@@ -139,7 +139,6 @@ E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\P
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Pages\UserControl\TaskAdd.g.cs
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Pages\UserControl\TaskAdd.baml
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Pages\UserControl\TaskRowControl.g.cs
-E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Pages\UserControl\TaskRowControl.baml
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Pages\UserControl\GoalRowControl.g.cs
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Pages\UserControl\GoalRowControl.baml

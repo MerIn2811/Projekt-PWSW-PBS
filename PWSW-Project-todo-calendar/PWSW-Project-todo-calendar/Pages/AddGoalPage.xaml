@@ -18,19 +18,19 @@
                     <StackPanel Orientation="Vertical" Background="LightGray">
 
                         <StackPanel Orientation="Vertical" Background="LightGray">
-                            <TextBox Text="Wpisz nazwę zadania" Height="32" Margin="0,10,0,0" />
+                            <TextBox x:Name="GoalName" Text="Wpisz nazwę zadania" Height="32" Margin="0,10,0,0" />
                             <TextBlock Text="Nazwa zadania" FontSize="14" Height="24"
                                        TextAlignment="Center" Margin="0,5,0,10" />
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical" Background="LightGray" Margin="0,5,0,10">
-                            <DatePicker Height="32" />
+                            <DatePicker x:Name="GoalDate" Height="32" />
                             <TextBlock Text="Termin wykonania" FontSize="14" Height="24"
                                        TextAlignment="Center" Margin="0,5,0,10" />
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical" Background="LightGray" Margin="0,5,0,10" >
-                            <RichTextBox Height="100" MinWidth="490" HorizontalAlignment="Stretch">
+                            <RichTextBox x:Name="GoalDescr" Height="100" MinWidth="490" HorizontalAlignment="Stretch">
                                 <FlowDocument>
                                     <Paragraph Margin="0">
                                         <Run Text="This is a sample RichTextBox. You can format text, insert images, and more." />
@@ -43,7 +43,7 @@
 
                         <StackPanel Orientation="Vertical" Background="LightGray" Margin="0,5,0,20">
                             <StackPanel Orientation="Horizontal">
-                                <ComboBox Name="ComboBox1" Height="32" Width="250" Padding="6,4" FontSize="13">
+                                <ComboBox x:Name="GoalCat" Height="32" Width="250" Padding="6,4" FontSize="13">
                                     <ComboBoxItem Content="Item1" IsSelected="True" />
                                     <ComboBoxItem Content="Item2" />
                                 </ComboBox>
@@ -58,9 +58,10 @@
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical" Background="LightGray" Margin="0,0,0,0">
-                            <ComboBox Name="ComboBoxPriority" Height="32" Width="Auto" Padding="6,4" FontSize="13">
-                                <ComboBoxItem Content="Item1" IsSelected="True" />
-                                <ComboBoxItem Content="Item2" />
+                            <ComboBox x:Name="GoalImportance" Height="32" Width="Auto" Padding="6,4" FontSize="13">
+                                <ComboBoxItem Content="0" IsSelected="True" />
+                                <ComboBoxItem Content="1" />
+                                <ComboBoxItem Content="2" />
                             </ComboBox>
 
                             <TextBlock Text="Pryjorytet" FontSize="14" Height="24"

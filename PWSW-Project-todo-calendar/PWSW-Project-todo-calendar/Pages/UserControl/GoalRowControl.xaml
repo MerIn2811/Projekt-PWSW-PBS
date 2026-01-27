@@ -5,50 +5,67 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="Auto" d:DesignWidth="350">
     
-    
-    <StackPanel Orientation="Vertical">
+    <Border x:Name="Colour" Background="LightGray" CornerRadius="6" Padding="4" Margin="5">
+        <StackPanel Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
 
-        <Grid Margin="0,10,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="30" />
-                <ColumnDefinition Width="30" />
-            </Grid.ColumnDefinitions>
+                    <CheckBox Grid.Column="0" x:Name="IsFinishedBox" Content="Goal" VerticalAlignment="Center" Checked="Checked" Unchecked="Checked"/>
+                    <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock Text="Zaczęto:" TextAlignment="Center" FontWeight="SemiBold"/>
+                        <TextBlock x:Name="StartDateText" FontSize="9"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock Text="Termin:" FontWeight="SemiBold" TextAlignment="Center" />
+                        <TextBlock x:Name="EndDateText" FontSize="9"/>
+                    </StackPanel>
+                    
+                    <TextBlock Grid.Column="3" x:Name="Category" Text="TextBlock" FontSize="10" TextAlignment="Center" VerticalAlignment="Center" />
+                    <Button Grid.Column="4" x:Name="SettingBtn" Content="⛭" Width="25" Height="25" Click="goGoalControlClick"  />
+                    
+                    <ToggleButton x:Name="ToggleTask"
+                                  Grid.Column="5"
+                                  Width="24" Height="24"
+                                  Content="▼"
+                                  Background="Transparent"
+                                  BorderBrush="Transparent"
+                                  VerticalAlignment="Center"
+                                  HorizontalAlignment="Center"
+                                  Checked="ToggleTask_Checked"
+                                  Unchecked="ToggleTask_Unchecked">
+                    </ToggleButton>
+                </Grid>
+                <Grid Grid.Row="1" Margin="5,5,5,0" Height="5">
+                    <ProgressBar x:Name="TasksFinishedBar" Minimum="0" Maximum="100" Value="75"></ProgressBar>
+                </Grid>
+            </Grid>
 
-            <CheckBox Grid.Column="0" Content="Goal" VerticalAlignment="Center" />
-            <TextBlock Grid.Column="1" Text="TextBlock" FontSize="10" TextAlignment="Center" VerticalAlignment="Center" />
-            <TextBlock Grid.Column="2" Text="TextBlock" FontSize="10" TextAlignment="Center" VerticalAlignment="Center" />
-            <Button Grid.Column="3" Content="⛭" Width="25" Height="25" Click="goGoalControlClick"  />
+            
+            <Border x:Name="TasksPanel"
+                    Margin="8,6,0,0"
+                    Padding="8"
+                    Background="#22FFFFFF"
+                    CornerRadius="6"
+                    Visibility="Collapsed">
+                <StackPanel x:Name="TaskPanel" Orientation="Vertical">
+                    <!-- <local:TaskRowControl/> -->
+                </StackPanel>
+            </Border>
 
-            <!-- Strzałka zmienia się triggerem na samym ToggleButton -->
-            <ToggleButton x:Name="ToggleTask"
-                          Grid.Column="4"
-                          Width="24" Height="24"
-                          Content="▼"
-                          Background="Transparent"
-                          BorderBrush="Transparent"
-                          VerticalAlignment="Center"
-                          HorizontalAlignment="Center"
-                          Checked="ToggleTask_Checked"
-                          Unchecked="ToggleTask_Unchecked">
-            </ToggleButton>
-        </Grid>
-
-        <!-- Widoczność sterowana stylem Border (bez TargetName) -->
-        <Border x:Name="TasksPanel"
-                Margin="8,6,0,0"
-                Padding="8"
-                Background="#22FFFFFF"
-                CornerRadius="6"
-                Visibility="Collapsed">
-            <StackPanel Orientation="Vertical">
-                <local:TaskRowControl/>
-            </StackPanel>
-        </Border>
-
-    </StackPanel>
+        </StackPanel>
+    </Border>
 </UserControl>

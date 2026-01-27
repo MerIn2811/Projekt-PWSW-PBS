@@ -10,33 +10,43 @@
 
     <Grid Background="#FFF7F7F7" Margin="24">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="280"/>
-            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <!-- LEWA KOLUMNA -->
         <Border Grid.Column="0" Background="LightGray" CornerRadius="6" Padding="10" Margin="0,0,12,0">
             <StackPanel Width="Auto" Orientation="Vertical">
-                <TextBlock Text="TextBlock" FontSize="14" Height="24" TextAlignment="Center" />
+                <TextBlock Text="Zadania" FontSize="20" Height="24" FontWeight="Heavy" TextAlignment="Center" />
 
-                <StackPanel Height="25" Orientation="Horizontal" Background="LightGray">
-                    <TextBlock Text="TextBlock" FontSize="14" Width="130" TextAlignment="Center" />
-                    <TextBlock Text="TextBlock" FontSize="14" Width="132" TextAlignment="Center" />
-                </StackPanel>
-
-                <Grid>
+                <Grid Background="LightGray">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <DatePicker Grid.Column="0" />
-                    <DatePicker Grid.Column="1" />
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Od" FontSize="14"  TextAlignment="Center" />
+                    <TextBlock Grid.Column="1" Grid.Row="0" Text="Do" FontSize="14" TextAlignment="Center" />
+                    <DatePicker Grid.Column="0" Grid.Row="1" x:Name="DateFrom" />
+                    <DatePicker Grid.Column="1" Grid.Row="1" x:Name="DateTo" />
+                </Grid>
+                
+                <Grid Margin="5,5,5,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Content="Szukaj" x:Name="FilterDateButton" Margin="0,0,5,0"/>
+                    <Button Grid.Column="1" Content="Wyczyść Filtr" x:Name="ClearDateButton" Margin="5,0,5,0" />
                 </Grid>
 
                 <ScrollViewer Height="420" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                    <StackPanel Orientation="Vertical">
-                        <userControl:GoalRowControl/> 
+                    <StackPanel x:Name="Goals" Orientation="Vertical">
+                        <!-- <userControl:GoalRowControl/>  -->
                     </StackPanel>
                 </ScrollViewer>
             </StackPanel>
@@ -74,12 +84,12 @@
         <!-- PRAWA KOLUMNA -->
         <Border Grid.Column="2" Background="LightGray" CornerRadius="6" Padding="10">
             <StackPanel Orientation="Vertical">
-                <TextBlock Text="TextBlock" FontSize="14" TextAlignment="Center" Height="41" />
+                <TextBlock Text="Twój dzień" FontSize="20"  FontWeight="Heavy" TextAlignment="Center" Height="41" />
 
                 <ScrollViewer Height="470" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
                     <StackPanel Orientation="Vertical" Background="LightGray">
                         <StackPanel Orientation="Vertical">
-                            <userControl:GoalRowControl/> 
+                            <!-- <userControl:GoalRowControl/>  -->
                         </StackPanel>
                     </StackPanel>
                 </ScrollViewer>
