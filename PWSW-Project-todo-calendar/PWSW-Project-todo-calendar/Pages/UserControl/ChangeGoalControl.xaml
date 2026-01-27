@@ -10,28 +10,38 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="160" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="Nazwa"  Margin="12,12,12,12"/>
-        <TextBox Grid.Row="0" Grid.Column="1"  Margin="0,12,12,12"/>
-        
-        <TextBlock Grid.Row="1" Grid.Column="0" Text="Data" Margin="12,12,12,12"/>
-        <DatePicker Grid.Row="1" Grid.Column="1"  Margin="0,12,12,12"/>
-        
-        <TextBlock Grid.Row="2" Grid.Column="0" Text="Opis" Margin="12,12,12,12" VerticalAlignment="Center" />
-        <TextBox Grid.Row="2" Grid.Column="1" Margin="0,12,12,12" Height="100" VerticalScrollBarVisibility="Auto"/>
-        
-        <TextBlock Grid.Row="3" Grid.Column="0" Text="Kategoria" Margin="12,12,12,12" />
-        <ComboBox Grid.Row="3" Grid.Column="1" Name="ComboBox1"  Margin="0,12,12,12">
-            <ComboBoxItem Content="Item1" IsSelected="True" />
-            <ComboBoxItem Content="Item2" />
-        </ComboBox>
-        
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Nazwa"  Margin="12,12,12,12"/>
+            <TextBox Grid.Row="0" Grid.Column="1"  Margin="0,12,12,12"/>
+            
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Data" Margin="12,12,12,12"/>
+            <DatePicker Grid.Row="1" Grid.Column="1"  Margin="0,12,12,12"/>
+            
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Opis" Margin="12,12,12,12" VerticalAlignment="Center" />
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="0,12,12,12" Height="100" VerticalScrollBarVisibility="Auto"/>
+            
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Kategoria" Margin="12,12,12,12" />
+            <ComboBox Grid.Row="3" Grid.Column="1" Name="ComboBox1"  Margin="0,12,12,12">
+                <ComboBoxItem Content="Item1" IsSelected="True" />
+                <ComboBoxItem Content="Item2" />
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="1" Margin="40,15,40,0">
+            <Button Height="20" Content="Dodaj nowe zadanie" Click="GoToAdTask"/>
+        </Grid>
     </Grid>
+    
 </UserControl>

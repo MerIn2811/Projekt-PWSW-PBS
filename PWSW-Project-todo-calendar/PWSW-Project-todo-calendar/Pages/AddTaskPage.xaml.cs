@@ -6,7 +6,7 @@ namespace PWSW_Project_todo_calendar.Pages;
 
 public partial class AddTaskPage : Page
 {
-    public AddTaskPage()
+    public AddTaskPage(int goalId)
     {
         InitializeComponent();
         AddNewTaskControl();

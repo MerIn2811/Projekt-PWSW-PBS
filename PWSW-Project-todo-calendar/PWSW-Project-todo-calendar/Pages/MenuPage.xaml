@@ -29,6 +29,9 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
                 <!-- NAGŁÓWEK -->
@@ -244,42 +247,57 @@
                                 </Border>
                             </Grid>
                         </StackPanel>
-                        <StackPanel Orientation="Vertical" Margin="0,15,0,10">
-                            <TextBlock TextAlignment="Center" Text="OPCJE UŻYTKOWNIKA"></TextBlock>
-                        </StackPanel>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0">
-                                <Button Content="Zmień Hasło" Style="{StaticResource LinkButton}" Click="GoPassword_Click"/>
-                                <Button Content="Zmień Maila" Style="{StaticResource LinkButton}" Click="GoEmail_Click"/>
-                                <Button Content="Zmień obraz użytkownika" Style="{StaticResource LinkButton}" Click="GoAvatar_Click"/>
-                            </StackPanel>
-                            <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                            <Border
-                                    Width="65"
-                                    Height="65"
-                                    CornerRadius="30"
-                                    BorderBrush="Gray"
-                                    BorderThickness="1">
-
-                                <Border.Background>
-                                    <ImageBrush 
-                                                x:Name="AvatarImage"
-                                                Stretch="UniformToFill"/>
-                                </Border.Background>
-                                
-                            </Border>
-                                <TextBlock Text="Username" TextAlignment="Center"></TextBlock>
-                            </StackPanel>
-                            
-                        </Grid>
                         
                     </StackPanel>
                 </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Row="0" Height="20" Content="Zapisz zmiany"/>
+                    <Grid Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,15,0,10">
+                                <TextBlock TextAlignment="Center" Text="OPCJE UŻYTKOWNIKA"></TextBlock>
+                            </StackPanel>
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0">
+                                    <Button Content="Zmień Hasło" Style="{StaticResource LinkButton}" Click="GoPassword_Click"/>
+                                    <Button Content="Zmień Maila" Style="{StaticResource LinkButton}" Click="GoEmail_Click"/>
+                                    <Button Content="Zmień obraz użytkownika" Style="{StaticResource LinkButton}" Click="GoAvatar_Click"/>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+                                    <Border
+                                        Width="65"
+                                        Height="65"
+                                        CornerRadius="30"
+                                        BorderBrush="Gray"
+                                        BorderThickness="1">
 
+                                        <Border.Background>
+                                            <ImageBrush 
+                                                x:Name="AvatarImage"
+                                                Stretch="UniformToFill"/>
+                                        </Border.Background>
+                                    
+                                    </Border>
+                                    <TextBlock Text="Username" TextAlignment="Center"></TextBlock>
+                                </StackPanel>
+                                
+                            </Grid>
+                        </Grid>
+                        
+                    </Grid>
+                </Grid>
             </Grid>
         </Border>
     </Grid>

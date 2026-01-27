@@ -3,6 +3,8 @@ using System.Windows;
 using System.Windows.Controls;
 using LiveChartsCore;
 using LiveChartsCore.SkiaSharpView;
+using PWSW_Project_todo_calendar.Config;
+using PWSW_Project_todo_calendar.Pages.UserControl;
 
 namespace PWSW_Project_todo_calendar.Pages
 {
@@ -11,6 +13,7 @@ namespace PWSW_Project_todo_calendar.Pages
         public HomePage()
         {
             InitializeComponent();
+            Loaded += HomePage_Loaded;
             
             if (DesignerProperties.GetIsInDesignMode(this))
             {
@@ -18,6 +21,7 @@ namespace PWSW_Project_todo_calendar.Pages
                 StatsPieHome.Visibility = Visibility.Collapsed;
                 return;
             }
+            
             
             StatsPieHome.Series = new ISeries[]
             {
@@ -44,10 +48,29 @@ namespace PWSW_Project_todo_calendar.Pages
                 }
             };
         }
+        
+        private void HomePage_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadGoals();
+        }
 
         private void GoToStats(object sender, RoutedEventArgs routedEventArgs)
         {
             NavigationService?.Navigate(new StatisticsPage());
+        }
+
+        private void LoadGoals()
+        {
+            Goals.Children.Clear();
+
+            foreach (var goal in UserSession.Goals)
+            {
+                if (!UserSession.TasksByGoal.TryGetValue(goal.idGoal, out var tasks))
+                    tasks = new List<TaskDto>();
+
+                var ctrl = new GoalRowControl(goal);
+                Goals.Children.Add(ctrl);
+            }
         }
         
     }

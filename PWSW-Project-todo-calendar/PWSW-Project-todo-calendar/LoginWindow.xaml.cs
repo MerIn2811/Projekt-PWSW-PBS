@@ -56,13 +56,17 @@ namespace PWSW_Project_todo_calendar
                     main.Show();
                     Close();
                 }
+                else if (check.valid)
+                {
+                    throw new Exception("Session valid=true, ale user=null (sprawdź JSON z endpointu checker).");
+                }
                 
             }
             catch (Exception ex)
             {
                 TokenStorage.Clear();
                 UserSession.Token = "";
-                MessageBox.Show("Check session error:\n" + ex.Message);
+                MessageBox.Show("Check session error:\n" + ex.ToString());
             }
         }
 
@@ -94,6 +98,8 @@ namespace PWSW_Project_todo_calendar
 
                 
                 var goalsRes = await _api.GoalsAsync();
+                if (goalsRes.getGoals == null)
+                    throw new Exception("GoalsAsync zwróciło getGoals=null. Sprawdź czy API zwraca klucz 'getGoals'.");
                 UserSession.Goals = goalsRes.getGoals;
                 
 
@@ -113,7 +119,7 @@ namespace PWSW_Project_todo_calendar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Błąd logowania:\n" + ex.Message);
+                MessageBox.Show("Błąd logowania:\n" + ex.ToString());
             }
             
         }
