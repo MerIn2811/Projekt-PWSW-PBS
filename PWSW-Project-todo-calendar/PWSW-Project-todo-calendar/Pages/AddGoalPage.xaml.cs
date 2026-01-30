@@ -57,7 +57,6 @@ namespace PWSW_Project_todo_calendar.Pages
                 {
                     int newGoalId = await _api.AddGoalAsync(name, endDate.Value, category, importance, description);
                     UserSession.Goals = (await _api.GoalsAsync()).getGoals;
-                    //dodać pobieranie idGoal
                     NavigationService.Navigate(new AddTaskPage(newGoalId));
                 }
             

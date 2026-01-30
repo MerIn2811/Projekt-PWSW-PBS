@@ -158,3 +158,4 @@ E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\P
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Register.baml
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Register.g.cs
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\App.baml

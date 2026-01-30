@@ -176,6 +176,34 @@ public sealed class ApiClient
 
         return obj.goalId;
     }
+    
+    public async Task<int> AddTaskAsync(int goalId, string name, DateTime endDate, int importance, string description)
+    {
+        var payload = new
+        {
+            goalId,
+            name,
+            endDate = endDate.ToString("yyyy-MM-dd HH:mm:ss"),
+            importance,
+            description
+        };
+
+        using var resp = await _http.PostAsJsonAsync("AddTask", payload);
+        var text = await resp.Content.ReadAsStringAsync();
+
+        if (!resp.IsSuccessStatusCode)
+            throw new Exception($"ADD Task HTTP {(int)resp.StatusCode}: {text}");
+
+        var obj = JsonSerializer.Deserialize<AddTaskResponse>(
+            text,
+            new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
+        );
+
+        if (obj == null || obj.TaskId <= 0)
+            throw new Exception("Nie udało się odczytać ID nowego taska. Raw: " + text);
+
+        return obj.TaskId;
+    }
 
     public async Task PatchGoalAsyncIsFinished(int goalId, object patch)
     {
@@ -239,6 +267,38 @@ public sealed class ApiClient
 
         if (!res.IsSuccessStatusCode)
             throw new Exception(body);
+    }
+
+    public async Task<int> DeleteGoalAsync(int goalId)
+    {
+        var payload = new Dictionary<string, object?>
+        {
+            ["goalId"] = goalId
+        };
+        
+        using var resp = await _http.PostAsJsonAsync("deleteGoal", payload);
+        var text = await resp.Content.ReadAsStringAsync();
+        
+        if (!resp.IsSuccessStatusCode)
+            throw new Exception($"DELETE HTTP {(int)resp.StatusCode}: {text}");
+
+        return goalId;
+    }
+    
+    public async Task<int> DeleteTaskAsync(int taskId)
+    {
+        var payload = new Dictionary<string, object?>
+        {
+            ["taskId"] = taskId
+        };
+        
+        using var resp = await _http.PostAsJsonAsync("deleteTask", payload);
+        var text = await resp.Content.ReadAsStringAsync();
+        
+        if (!resp.IsSuccessStatusCode)
+            throw new Exception($"DELETE HTTP {(int)resp.StatusCode}: {text}");
+
+        return taskId;
     }
     
 }

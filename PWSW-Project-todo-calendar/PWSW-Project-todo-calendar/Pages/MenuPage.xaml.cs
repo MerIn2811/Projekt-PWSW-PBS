@@ -20,16 +20,16 @@ public partial class MenuPage : Page
     
    
     private void GoPassword_Click(object sender, RoutedEventArgs e)
-        => NavigationService?.Navigate(new SettingsEditPage(SettingsEditMode.Password));
+        => NavigationService?.Navigate(new SettingsEditPage(SettingsEditMode.Password, UserSession.UserId));
 
     private void GoEmail_Click(object sender, RoutedEventArgs e)
-        => NavigationService?.Navigate(new SettingsEditPage(SettingsEditMode.Email));
+        => NavigationService?.Navigate(new SettingsEditPage(SettingsEditMode.Email, UserSession.UserId));
 
     private void GoUsername_Click(object sender, RoutedEventArgs e)
-        => NavigationService?.Navigate(new SettingsEditPage(SettingsEditMode.Username));
+        => NavigationService?.Navigate(new SettingsEditPage(SettingsEditMode.Username, UserSession.UserId));
 
     private void GoAvatar_Click(object sender, RoutedEventArgs e)
-        => NavigationService?.Navigate(new SettingsEditPage(SettingsEditMode.Avatar));
+        => NavigationService?.Navigate(new SettingsEditPage(SettingsEditMode.Avatar,  UserSession.UserId));
     
     
     private void AddButton_Click(object sender, RoutedEventArgs e)

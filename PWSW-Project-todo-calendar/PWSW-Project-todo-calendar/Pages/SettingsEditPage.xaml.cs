@@ -12,7 +12,7 @@ public partial class SettingsEditPage : Page
     private readonly ApiClient _api = new ApiClient("https://lotekweronika.pl/api/");
     private ChangeAvatarContent? _avatarContent;
     
-    public SettingsEditPage(SettingsEditMode mode)
+    public SettingsEditPage(SettingsEditMode mode, int idSomething)
     {
         InitializeComponent();
         _mode = mode;
@@ -31,8 +31,8 @@ public partial class SettingsEditPage : Page
             SettingsEditMode.Password => new ChangePasswordContent(),
             SettingsEditMode.Email    => new ChangeEmailContent(),
             SettingsEditMode.Avatar   => _avatarContent = new ChangeAvatarContent(),
-            SettingsEditMode.Goal => new ChangeGoalControl(),
-            SettingsEditMode.Task => new ChangeTaskControl(),
+            SettingsEditMode.Goal => new ChangeGoalControl(idSomething),
+            SettingsEditMode.Task => new ChangeTaskControl(idSomething),
             _ => new TextBlock { Text = "Brak widoku." }
         };
     }
