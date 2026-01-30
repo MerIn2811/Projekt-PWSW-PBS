@@ -48,7 +48,7 @@ public partial class TaskRowControl : System.Windows.Controls.UserControl
     private void goToTaskChangeClick(object sender, RoutedEventArgs routedEventArgs)
     {
         var nav = NavigationService.GetNavigationService(this);
-        nav?.Navigate(new SettingsEditPage(SettingsEditMode.Task));
+        nav?.Navigate(new SettingsEditPage(SettingsEditMode.Task, _taskId));
     }
     
     private string FormatDate(string? value)
@@ -57,7 +57,7 @@ public partial class TaskRowControl : System.Windows.Controls.UserControl
             return "";
 
         if (DateTime.TryParse(value, out var dt))
-            return dt.ToString("dd.MM.yyyy HH:mm");
+            return dt.ToString("dd.MM.yyyy");
 
         return value;
     }

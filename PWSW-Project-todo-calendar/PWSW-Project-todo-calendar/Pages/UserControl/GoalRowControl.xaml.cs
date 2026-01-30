@@ -54,49 +54,52 @@ public partial class GoalRowControl : System.Windows.Controls.UserControl
 
     private void LoadProgress()
     {
-        int maxProgress = UserSession.TasksByGoal[_goalId].Count;
+        if (!UserSession.TasksByGoal.TryGetValue(_goalId, out var tasks))
+        {
+            TasksFinishedBar.Value = IsFinishedBox.IsChecked == true ? 100 : 0;
+            return;
+        }
+
+        int maxProgress = tasks.Count;
         if (maxProgress == 0)
         {
-            if (IsFinishedBox.IsChecked == true) TasksFinishedBar.Value = 100;
-            else TasksFinishedBar.Value = 0;
-            
+            TasksFinishedBar.Value = IsFinishedBox.IsChecked == true ? 100 : 0;
+            return;
         }
-        else
-        {
-            int currentProgress = 0;
-            foreach (var task in UserSession.TasksByGoal[_goalId])
-            {
-                if (task.isFinished == true)
-                {
-                    currentProgress += 1;
-                }
-            }
 
-            if (currentProgress < maxProgress)
-            {
-                IsFinishedBox.IsChecked = false;
-            }
+        int currentProgress = tasks.Count(t => t.isFinished == true);
 
-            double finalValue = (double)currentProgress / maxProgress * 100.0;
-            if (finalValue >= 100.0)
-            {
-                IsFinishedBox.IsChecked = true;
-            }
-            TasksFinishedBar.Value = finalValue;
-        }
+        if (currentProgress < maxProgress)
+            IsFinishedBox.IsChecked = false;
+
+        double finalValue = (double)currentProgress / maxProgress * 100.0;
+
+        if (finalValue >= 100.0)
+            IsFinishedBox.IsChecked = true;
+
+        TasksFinishedBar.Value = finalValue;
     }
+
 
     private void LoadTasks()
     {
         TaskPanel.Children.Clear();
 
-        if (UserSession.TasksByGoal[_goalId].Count == 0)
+        if (!UserSession.TasksByGoal.TryGetValue(_goalId, out var tasks))
         {
             ToggleTask.IsEnabled = false;
             ToggleTask.Visibility = Visibility.Hidden;
+            return;
         }
 
-        foreach (var task in UserSession.TasksByGoal[_goalId])
+        if (tasks.Count == 0)
+        {
+            ToggleTask.IsEnabled = false;
+            ToggleTask.Visibility = Visibility.Hidden;
+            return;
+        }
+
+        foreach (var task in tasks)
         {
             var ctrl = new TaskRowControl(task, _goalId, RefreshThisGoalAsync);
             TaskPanel.Children.Add(ctrl);
@@ -118,7 +121,7 @@ public partial class GoalRowControl : System.Windows.Controls.UserControl
     private void goGoalControlClick(object sender, RoutedEventArgs e)
     {
         var nav = NavigationService.GetNavigationService(this);
-        nav?.Navigate(new SettingsEditPage(SettingsEditMode.Goal));
+        nav?.Navigate(new SettingsEditPage(SettingsEditMode.Goal, _goalId));
     }
     
     private string FormatDate(string? value)
@@ -127,7 +130,7 @@ public partial class GoalRowControl : System.Windows.Controls.UserControl
             return "";
 
         if (DateTime.TryParse(value, out var dt))
-            return dt.ToString("dd.MM.yyyy HH:mm");
+            return dt.ToString("dd.MM.yyyy");
 
         return value;
     }

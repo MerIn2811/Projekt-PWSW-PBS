@@ -19,9 +19,9 @@
             <TextBlock Text="Opis" TextAlignment="Center" Margin="0,5,0,10"/>
 
             <ComboBox x:Name="CbPriority" Height="32" Padding="6,4" FontSize="13">
-                <ComboBoxItem Content="Low"/>
-                <ComboBoxItem Content="Normal" IsSelected="True"/>
-                <ComboBoxItem Content="High"/>
+                <ComboBoxItem Content="0"/>
+                <ComboBoxItem Content="1" IsSelected="True"/>
+                <ComboBoxItem Content="2"/>
             </ComboBox>
             <TextBlock Text="Priorytet" TextAlignment="Center" Margin="0,5,0,0"/>
 
