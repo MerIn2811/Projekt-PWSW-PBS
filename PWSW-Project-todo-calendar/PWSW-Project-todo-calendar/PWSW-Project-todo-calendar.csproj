@@ -19,11 +19,16 @@
         <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.2" />
         <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.2" />
         <PackageReference Include="MySqlConnector" Version="2.5.0" />
+        <PackageReference Include="PDFsharp" Version="6.2.4" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Assets\Images\basicUser.png" />
       <Resource Include="Assets\Images\basicUser.png" />
+      <None Remove="Assets\Images\checklist.png" />
+      <Resource Include="Assets\Images\checklist.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
     <ItemGroup>

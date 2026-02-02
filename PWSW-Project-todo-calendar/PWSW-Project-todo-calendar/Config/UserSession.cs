@@ -11,6 +11,9 @@ public static class UserSession
     public static List<GoalDto> Goals { get; set; } = new();
     public static Dictionary<int, List<TaskDto>> TasksByGoal { get; set; } = new();
     
+    public static event Action? DataChanged;
+    public static void NotifyDataChanged() => DataChanged?.Invoke();
+    
     public static void ClearCache()
     {
         Goals = new();

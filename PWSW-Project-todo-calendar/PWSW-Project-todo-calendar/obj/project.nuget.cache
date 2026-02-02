@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "grPfkAuoueI=",
+  "dgSpecHash": "VwJlzl/Kk8c=",
   "success": true,
   "projectFilePath": "E:\\POLIBUDA\\SEMEST_V\\PROJEKTY\\PWSW\\Projekt-PWSW-PBS\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar\\PWSW-Project-todo-calendar.csproj",
   "expectedPackageFiles": [
@@ -67,7 +67,7 @@
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.globalization.cultureinfocache\\1.0.0-rc1-final\\microsoft.extensions.globalization.cultureinfocache.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.localization\\1.0.0-rc1-final\\microsoft.extensions.localization.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\1.0.0-rc1-final\\microsoft.extensions.localization.abstractions.1.0.0-rc1-final.nupkg.sha512",
-    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.memorypool\\1.0.0-rc1-final\\microsoft.extensions.memorypool.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.optionsmodel\\1.0.0-rc1-final\\microsoft.extensions.optionsmodel.1.0.0-rc1-final.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\microsoft.extensions.platformabstractions\\1.0.0-rc1-final\\microsoft.extensions.platformabstractions.1.0.0-rc1-final.nupkg.sha512",
@@ -79,6 +79,7 @@
     "C:\\Users\\Weronika\\.nuget\\packages\\newtonsoft.json\\6.0.6\\newtonsoft.json.6.0.6.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\opentk\\3.3.1\\opentk.3.3.1.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\opentk.glwpfcontrol\\3.3.0\\opentk.glwpfcontrol.3.3.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\pdfsharp\\6.2.4\\pdfsharp.6.2.4.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp\\3.116.1\\skiasharp.3.116.1.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp.harfbuzz\\3.116.1\\skiasharp.harfbuzz.3.116.1.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.116.1\\skiasharp.nativeassets.macos.3.116.1.nupkg.sha512",
@@ -103,6 +104,7 @@
     "C:\\Users\\Weronika\\.nuget\\packages\\system.runtime\\4.0.0\\system.runtime.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.runtime.extensions\\4.0.0\\system.runtime.extensions.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.runtime.interopservices\\4.0.0\\system.runtime.interopservices.4.0.0.nupkg.sha512",
+    "C:\\Users\\Weronika\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.text.encoding\\4.0.0\\system.text.encoding.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.text.encoding.extensions\\4.0.0\\system.text.encoding.extensions.4.0.0.nupkg.sha512",
     "C:\\Users\\Weronika\\.nuget\\packages\\system.text.encodings.web\\10.0.2\\system.text.encodings.web.10.0.2.nupkg.sha512",

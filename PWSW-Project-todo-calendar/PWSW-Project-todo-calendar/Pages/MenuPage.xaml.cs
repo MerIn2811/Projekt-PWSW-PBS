@@ -34,14 +34,7 @@ public partial class MenuPage : Page
     
     private void AddButton_Click(object sender, RoutedEventArgs e)
     {
-        if (!string.IsNullOrWhiteSpace(TextBox1.Text))
-        {
-            TextBox1.Clear();
-        }
-        else
-        {
-            MessageBox.Show("Wpisz tekst do dodania.",null, MessageBoxButton.OK, MessageBoxImage.Error );
-        }
+        
     }
     
     

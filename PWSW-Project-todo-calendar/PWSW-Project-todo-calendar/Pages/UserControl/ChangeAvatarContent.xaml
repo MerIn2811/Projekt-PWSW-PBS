@@ -5,13 +5,29 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
-    <StackPanel HorizontalAlignment="Stretch">
+             d:DesignHeight="280" d:DesignWidth="520">
+
+    <StackPanel HorizontalAlignment="Center">
+
+        <TextBlock Text="Zmień avatar"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   TextAlignment="Center"
+                   Margin="0,0,0,6"/>
+
+        <TextBlock Text="Wybierz nowe zdjęcie profilowe. Najlepiej kwadratowe."
+                   Foreground="{StaticResource MutedTextBrush}"
+                   TextAlignment="Center"
+                   Margin="0,0,0,16"/>
+
+        <!-- Avatar preview -->
         <Border x:Name="AvatarCircle"
-                Width="96" Height="96"
-                CornerRadius="48"
-                BorderBrush="#DDD" BorderThickness="1"
-                Margin="0,0,0,12">
+                Width="110" Height="110"
+                CornerRadius="55"
+                BorderBrush="{StaticResource BorderBrushSoft}"
+                BorderThickness="1"
+                Margin="0,0,0,14">
+
             <Border.Background>
                 <ImageBrush x:Name="AvatarBrush"
                             Stretch="UniformToFill"
@@ -19,8 +35,17 @@
             </Border.Background>
         </Border>
 
+        <!-- Action -->
         <Button Content="Wybierz obraz"
-                Width="160"
+                Style="{StaticResource PrimaryButton}"
+                Width="180"
+                Height="38"
                 Click="ChooseAvatar_Click"/>
+
+        <TextBlock Text="Obsługiwane formaty: JPG, PNG"
+                   Foreground="{StaticResource MutedTextBrush}"
+                   FontSize="11"
+                   TextAlignment="Center"
+                   Margin="0,10,0,0"/>
     </StackPanel>
 </UserControl>

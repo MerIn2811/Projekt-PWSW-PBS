@@ -5,27 +5,87 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
              mc:Ignorable="d"
-             d:DesignHeight="*" d:DesignWidth="*">
-        
-    <Border x:Name="Colour" Background="LightGray" CornerRadius="6" Padding="4" Margin="5">
+             d:DesignHeight="60" d:DesignWidth="420">
+
+    <Border x:Name="Colour"
+            Style="{StaticResource GoalRowBorderStyle}"
+            BorderBrush="{StaticResource BorderBrushSoft}"
+            BorderThickness="1"
+            CornerRadius="12"
+            Padding="10"
+            Margin="0,0,0,8">
+
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="34"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="36"/>
             </Grid.ColumnDefinitions>
 
-            <CheckBox Grid.Column="0" x:Name="TaskIsFinished" VerticalAlignment="Center" Checked="Checked" Unchecked="Checked" />
+            <!-- Done -->
+            <CheckBox Grid.Column="0"
+                      x:Name="TaskIsFinished"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Center"
+                      Checked="Checked"
+                      Unchecked="Checked"/>
 
-            <TextBlock Grid.Column="1" x:Name="TaskName" Text="Nazwa celu" FontSize="10"
-                       TextAlignment="Center" VerticalAlignment="Center"/>
+            <!-- Name -->
+            <TextBlock Grid.Column="1"
+                       x:Name="TaskName"
+                       Text="Nazwa zadania"
+                       FontSize="13"
+                       FontWeight="SemiBold"
+                       TextTrimming="CharacterEllipsis"
+                       VerticalAlignment="Center"
+                       Margin="6,0,10,0"/>
 
-            <TextBlock Grid.Column="2" x:Name="EndDateTask" Text="Termin" FontSize="10"
-                       TextAlignment="Center" VerticalAlignment="Center"/>
+            <!-- Due date -->
+            <TextBlock Grid.Column="2"
+                       x:Name="EndDateTask"
+                       Text="Termin"
+                       FontSize="12"
+                       Foreground="{StaticResource MutedTextBrush}"
+                       TextAlignment="Right"
+                       VerticalAlignment="Center"
+                       Margin="0,0,10,0"/>
 
-            <Button Grid.Column="3" Content="⛭" Width="25" Height="25" Click="goToTaskChangeClick"/>
-            
+            <!-- Settings -->
+            <Button Grid.Column="3"
+                    Content="⛭"
+                    Width="32"
+                    Height="32"
+                    FontSize="14"
+                    Background="#00FFFFFF"
+                    BorderBrush="{StaticResource BorderBrushSoft}"
+                    BorderThickness="1"
+                    Cursor="Hand"
+                    Click="goToTaskChangeClick"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFEEF2FF"/>
+                                <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Opacity" Value="0.85"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </Grid>
+        
     </Border>
 </UserControl>

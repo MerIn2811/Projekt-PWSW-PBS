@@ -16,6 +16,9 @@ public partial class TaskRowControl : System.Windows.Controls.UserControl
     public TaskRowControl(TaskDto task, int goalId, Func<Task> refreshGoal)
     {
         InitializeComponent();
+        
+        DataContext = task;
+        
         _taskId = (int)task.idTask;
         _goal = goalId;
         
@@ -26,22 +29,7 @@ public partial class TaskRowControl : System.Windows.Controls.UserControl
         
         TaskName.Text = task.name;
         EndDateTask.Text = FormatDate(task.endDate);
-
-        switch (task.importance)
-        {
-            case 0:
-                Colour.Background = new SolidColorBrush(Colors .Pink);
-                break;
-            case 1:
-                Colour.Background = new SolidColorBrush(Colors.DarkSalmon);
-                break;
-            case 2:
-                Colour.Background = new SolidColorBrush(Colors.OrangeRed);
-                break;
-            default:
-                Colour.Background = new SolidColorBrush(Colors.White);
-                break;
-        }
+        
         
     }
 

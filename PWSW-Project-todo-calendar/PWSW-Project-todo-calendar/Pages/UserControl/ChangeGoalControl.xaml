@@ -5,51 +5,98 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
              mc:Ignorable="d"
-             d:DesignHeight="*" d:DesignWidth="*">
+             d:DesignHeight="420" d:DesignWidth="520">
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+
+        <!-- ================= FORMULARZ ================= -->
+        <StackPanel Grid.Row="0">
+
+            <!-- Nazwa -->
+            <StackPanel Margin="0,0,0,12">
+                <TextBlock Text="Nazwa celu" Margin="2,0,0,6"/>
+                <TextBox x:Name="GoalNameBox"
+                         Style="{StaticResource ModernTextBox}"/>
+            </StackPanel>
+
+            <!-- Termin -->
+            <StackPanel Margin="0,0,0,12">
+                <TextBlock Text="Termin" Margin="2,0,0,6"/>
+                <DatePicker x:Name="GoalDatePicker"
+                            Style="{StaticResource ModernDatePicker}"/>
+            </StackPanel>
+
+            <!-- Opis -->
+            <StackPanel Margin="0,0,0,12">
+                <TextBlock Text="Opis" Margin="2,0,0,6"/>
+                <TextBox x:Name="GoalDescBox"
+                         Style="{StaticResource ModernTextBox}"
+                         Height="120"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Auto"/>
+                <TextBlock Text="Krótki opis celu lub notatka."
+                           Foreground="{StaticResource MutedTextBrush}"
+                           Margin="2,6,0,0"/>
+            </StackPanel>
+
+            <!-- Kategoria -->
+            <StackPanel Margin="0,0,0,0">
+                <TextBlock Text="Kategoria" Margin="2,0,0,6"/>
+                <ComboBox x:Name="GoalCategoryBox"
+                          Style="{StaticResource ModernComboBox}">
+                    <ComboBoxItem Content="Item1" IsSelected="True"/>
+                    <ComboBoxItem Content="Item2"/>
+                </ComboBox>
+            </StackPanel>
+
+        </StackPanel>
+
+        <!-- ================= AKCJE DODATKOWE ================= -->
+        <Border Grid.Row="1"
+                Margin="0,16,0,0"
+                Padding="12"
+                Background="#FFF9FAFB"
+                BorderBrush="{StaticResource BorderBrushSoft}"
+                BorderThickness="1"
+                CornerRadius="12">
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+
+                <Button Content="Dodaj / edytuj taski"
+                        Style="{StaticResource SecondaryButton}"
+                        Height="38"
+                        Width="200"
+                        Click="GoToAdTask"/>
+            </StackPanel>
+        </Border>
+
+        <!-- ================= USUWANIE ================= -->
+        <Grid Grid.Row="2" Margin="0,16,0,0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="160" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="Nazwa"  Margin="12,12,12,12"/>
-            <TextBox Grid.Row="0" Grid.Column="1"  Margin="0,12,12,12"/>
-            
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Data" Margin="12,12,12,12"/>
-            <DatePicker Grid.Row="1" Grid.Column="1"  Margin="0,12,12,12"/>
-            
-            <TextBlock Grid.Row="2" Grid.Column="0" Text="Opis" Margin="12,12,12,12" VerticalAlignment="Center" />
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="0,12,12,12" Height="100" VerticalScrollBarVisibility="Auto"/>
-            
-            <TextBlock Grid.Row="3" Grid.Column="0" Text="Kategoria" Margin="12,12,12,12" />
-            <ComboBox Grid.Row="3" Grid.Column="1" Name="ComboBox1"  Margin="0,12,12,12">
-                <ComboBoxItem Content="Item1" IsSelected="True" />
-                <ComboBoxItem Content="Item2" />
-            </ComboBox>
-        </Grid>
-        <Grid Grid.Row="1" Margin="40,15,40,0">
-            <Button Height="20" Content="Dodaj nowe zadanie" Click="GoToAdTask"/>
-        </Grid>
-        <Grid Grid.Row="2" Margin="40,105,40,0" >
-            <Button Content="Usuń cel"
-                    Height="36"
+
+            <TextBlock Grid.Column="0"
+                       Text="Usunięcie celu spowoduje usunięcie wszystkich powiązanych tasków."
+                       Foreground="{StaticResource MutedTextBrush}"
+                       VerticalAlignment="Center"/>
+
+            <Button Grid.Column="1"
+                    Content="Usuń cel"
+                    Height="40"
+                    Width="140"
+                    Margin="12,0,0,0"
                     Style="{StaticResource DangerButtonStyle}"
                     Click="DeleteGoal"/>
         </Grid>
+
     </Grid>
-    
 </UserControl>

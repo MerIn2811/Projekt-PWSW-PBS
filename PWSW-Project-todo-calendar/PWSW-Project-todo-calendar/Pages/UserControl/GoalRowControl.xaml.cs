@@ -15,34 +15,26 @@ public partial class GoalRowControl : System.Windows.Controls.UserControl
     private readonly int _goalId;
     private readonly ApiClient _api = new ApiClient("https://lotekweronika.pl/api/");
     
+    public event EventHandler? GoalStatusChanged;
+    
+    
     public GoalRowControl(GoalDto goal)
     {
         InitializeComponent();
+
+        DataContext = goal;
+        
         _goalId = goal.idGoal;
         Loaded += GoalPage_Loaded;
+        
         if (goal.isFinished == true) IsFinishedBox.IsChecked = true;
         else IsFinishedBox.IsChecked = false;
-
-        IsFinishedBox.Content = goal.name;
+        Cel.Text = goal.name;
+        
+        
         StartDateText.Text = FormatDate(goal.startDate);
         EndDateText.Text   = FormatDate(goal.endDate);
         Category.Text = goal.category;
-
-        switch (goal.importance)
-        {
-            case 0:
-                Colour.Background = new SolidColorBrush(Colors .Pink);
-                break;
-            case 1:
-                Colour.Background = new SolidColorBrush(Colors.DarkSalmon);
-                break;
-            case 2:
-                Colour.Background = new SolidColorBrush(Colors.OrangeRed);
-                break;
-            default:
-                Colour.Background = new SolidColorBrush(Colors.White);
-                break;
-        }
         
     }
 
@@ -150,6 +142,8 @@ public partial class GoalRowControl : System.Windows.Controls.UserControl
 
             UserSession.Goals = (await _api.GoalsAsync()).getGoals;
             LoadProgress();
+            
+            GoalStatusChanged?.Invoke(this, EventArgs.Empty);
         }
         catch (Exception ex)
         {
