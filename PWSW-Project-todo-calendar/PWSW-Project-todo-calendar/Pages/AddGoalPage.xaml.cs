@@ -13,6 +13,15 @@ namespace PWSW_Project_todo_calendar.Pages
         public AddGoalPage()
         {
             InitializeComponent();
+            var categories = Enum.GetValues<Categories>()
+                .Skip(1)
+                .SkipLast(1)
+                .Select(c => c.ToString())
+                .ToList();
+
+            GoalCat.ItemsSource = categories;
+            GoalCat.SelectedItem = categories.First();
+            
         }
         
         private void AddButton_Click(object sender, RoutedEventArgs e)
@@ -38,7 +47,7 @@ namespace PWSW_Project_todo_calendar.Pages
                 return;
             }
 
-            var category = (string)GoalCat.SelectionBoxItem;
+            var category = GoalCat.SelectionBoxItem.ToString();
             var importance = int.Parse((string)GoalImportance.SelectionBoxItem);
             var description = new TextRange(
                 GoalDescr.Document.ContentStart,

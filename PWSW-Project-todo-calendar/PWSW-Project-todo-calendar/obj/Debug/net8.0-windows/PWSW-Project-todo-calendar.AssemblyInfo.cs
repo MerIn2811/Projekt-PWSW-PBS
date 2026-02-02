@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PWSW-Project-todo-calendar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd5cb8b5ff4331d0f1577be7947175955c89329a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+850c4f6d478e9e47cf05e6c7658d10ef926fbae8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PWSW-Project-todo-calendar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PWSW-Project-todo-calendar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

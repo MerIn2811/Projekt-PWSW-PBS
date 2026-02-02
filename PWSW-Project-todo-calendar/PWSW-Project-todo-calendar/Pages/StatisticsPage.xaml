@@ -6,92 +6,174 @@
       xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages"
       xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
       mc:Ignorable="d"
-      Title="StatisticsPage" Height="450" Width="800">
-    <Grid>
+      Title="StatisticsPage"
+      Background="{StaticResource BgBrush}">
+
+    <Grid Margin="24">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0" Orientation="Vertical">
-            <TextBlock Text="Statystyka w wybranym miesiącu"
-                       FontSize="18"
-                       FontWeight="Bold"
-                       Margin="0,0,0,12"
-                       HorizontalAlignment="Center" />
-            <Border Background="#00FFFFFF" CornerRadius="6" Padding="0" Margin="90,0,90,0">
-                <StackPanel Orientation="Vertical">
-                    <Viewbox Stretch="Uniform">
-                        <Calendar/>
-                    </Viewbox>
-                </StackPanel>
-            </Border>
-            <Border CornerRadius="10" Padding="16" Margin="0,18,0,0">
-                <StackPanel>
-                    <TextBlock Text="Podsumowanie"
-                               TextAlignment="Center"
-                               FontSize="14"
-                               FontWeight="SemiBold"
-                               Margin="0,0,0,12"/>
 
-                    <lvc:PieChart x:Name="StatsPieSmall"
-                                  Height="150"
-                                  LegendPosition="Right"
-                                  InitialRotation="-90"/>
-                    <TextBlock x:Name="DesignerPlaceholderSmall"
-                               Text="(Podgląd wykresu w runtime)"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Visibility="Collapsed"/>
-                </StackPanel>
-            </Border>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Orientation="Vertical">
-            <TextBlock Text="Statystyka w wybranym okresie"
-                       FontSize="18"
-                       FontWeight="Bold"
-                       Margin="0,0,0,12"
-                       HorizontalAlignment="Center" />
+        <!-- ===== LEWA: miesiąc ===== -->
+        <Border Grid.Column="0"
+                Style="{StaticResource Card}"
+                Margin="0,0,12,0"
+                Padding="18">
+
             <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" Text="Od" VerticalAlignment="Center" />
-                    <DatePicker Grid.Column="1" Margin="10,0,10,0"/>
-                </Grid>
-                <Grid Grid.Column="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" Text="Do" VerticalAlignment="Center" />
-                    <DatePicker Grid.Column="1" Margin="10,0,10,0"/>
-                </Grid>
-            </Grid>
-            <Border CornerRadius="10" Padding="16" Margin="0,18,0,0">
-                <StackPanel>
-                    <TextBlock Text="Podsumowanie"
-                               TextAlignment="Center"
-                               FontSize="14"
-                               FontWeight="SemiBold"
-                               Margin="0,0,0,12"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-                    <lvc:PieChart x:Name="StatsPie"
-                                  Height="260"
-                                  LegendPosition="Right"
-                                  InitialRotation="-90"/>
-                    <TextBlock x:Name="DesignerPlaceholder"
-                               Text="(Podgląd wykresu w runtime)"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Visibility="Collapsed"/>
+                <StackPanel Grid.Row="0" Margin="0,0,0,14">
+                    <TextBlock Text="Statystyka w wybranym miesiącu"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               TextAlignment="Center"/>
+                    <TextBlock Text="Zmień miesiąc w kalendarzu i zobacz podsumowanie."
+                               Foreground="{StaticResource MutedTextBrush}"
+                               TextAlignment="Center"
+                               Margin="0,6,0,0"/>
                 </StackPanel>
-            </Border>
-        </StackPanel>
-        </Grid>
+
+                <!-- Kalendarz -->
+                <Border Grid.Row="1"
+                        Background="#FFF9FAFB"
+                        BorderBrush="{StaticResource BorderBrushSoft}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="10">
+
+                    <Viewbox Stretch="Uniform">
+                        <Calendar x:Name="MonthCalendar"
+                                  DisplayDateChanged="Calendar_DisplayDateChanged"/>
+                    </Viewbox>
+                </Border>
+
+                <!-- Wykres -->
+                <Border Grid.Row="2"
+                        Margin="0,16,0,0"
+                        Background="{StaticResource CardBrush}"
+                        BorderBrush="{StaticResource BorderBrushSoft}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="14">
+
+                    <StackPanel>
+                        <TextBlock Text="Podsumowanie"
+                                   TextAlignment="Center"
+                                   FontSize="14"
+                                   FontWeight="SemiBold"
+                                   Margin="0,0,0,10"/>
+
+                        <lvc:PieChart x:Name="StatsPieSmall"
+                                      Height="170"
+                                      LegendPosition="Right"
+                                      InitialRotation="-90"/>
+
+                        <TextBlock x:Name="DesignerPlaceholderSmall"
+                                   Text="(Podgląd wykresu w runtime)"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Visibility="Collapsed"
+                                   Foreground="{StaticResource MutedTextBrush}"/>
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+        </Border>
+
+        <!-- ===== PRAWA: zakres ===== -->
+        <Border Grid.Column="1"
+                Style="{StaticResource Card}"
+                Margin="12,0,0,0"
+                Padding="18">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Margin="0,0,0,14">
+                    <TextBlock Text="Statystyka w wybranym okresie"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               TextAlignment="Center"/>
+                    <TextBlock Text="Ustaw zakres dat i wygeneruj raport."
+                               Foreground="{StaticResource MutedTextBrush}"
+                               TextAlignment="Center"
+                               Margin="0,6,0,0"/>
+                </StackPanel>
+
+                <!-- Zakres dat -->
+                <Grid Grid.Row="1" Margin="0,0,0,12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="12"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Od" Margin="2,0,0,6"/>
+                        <DatePicker x:Name="PickerFrom"
+                                    Style="{StaticResource ModernDatePicker}"
+                                    SelectedDateChanged="Picker_SelectedDateChanged"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <TextBlock Text="Do" Margin="2,0,0,6"/>
+                        <DatePicker x:Name="PickerTo"
+                                    Style="{StaticResource ModernDatePicker}"
+                                    SelectedDateChanged="Picker_SelectedDateChanged"/>
+                    </StackPanel>
+                </Grid>
+
+                <!-- Wykres -->
+                <Border Grid.Row="2"
+                        Background="{StaticResource CardBrush}"
+                        BorderBrush="{StaticResource BorderBrushSoft}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="14">
+
+                    <StackPanel>
+                        <TextBlock Text="Podsumowanie"
+                                   TextAlignment="Center"
+                                   FontSize="14"
+                                   FontWeight="SemiBold"
+                                   Margin="0,0,0,10"/>
+
+                        <lvc:PieChart x:Name="StatsPie"
+                                      Height="280"
+                                      LegendPosition="Right"
+                                      InitialRotation="-90"/>
+
+                        <TextBlock x:Name="DesignerPlaceholder"
+                                   Text="(Podgląd wykresu w runtime)"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Visibility="Collapsed"
+                                   Foreground="{StaticResource MutedTextBrush}"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- PDF -->
+                <Button Grid.Row="3"
+                        Content="Generuj raport PDF"
+                        Style="{StaticResource PrimaryButton}"
+                        Height="42"
+                        Width="220"
+                        Margin="0,16,0,0"
+                        HorizontalAlignment="Center"
+                        Click="BtnGenerateReport_Click"/>
+            </Grid>
+        </Border>
+
+    </Grid>
 </Page>

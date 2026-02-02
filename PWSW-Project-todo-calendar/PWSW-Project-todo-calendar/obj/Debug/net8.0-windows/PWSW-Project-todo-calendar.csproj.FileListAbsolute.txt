@@ -159,3 +159,14 @@ E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\P
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Register.baml
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\Register.g.cs
 E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\obj\Debug\net8.0-windows\App.baml
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.BarCodes.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.Charting.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.Cryptography.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.Quality.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.Shared.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.Snippets.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.System.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.WPFonts.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\PdfSharp.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+E:\POLIBUDA\SEMEST_V\PROJEKTY\PWSW\Projekt-PWSW-PBS\PWSW-Project-todo-calendar\PWSW-Project-todo-calendar\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

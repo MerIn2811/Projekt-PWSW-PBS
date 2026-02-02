@@ -5,76 +5,156 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages"
       mc:Ignorable="d"
-      Title="AddTaskPage" Width="1500" Height="800">
-    <Grid Background="#FFF7F7F7" Margin="24">
-        <Border Background="LightGray" CornerRadius="6" Padding="16" HorizontalAlignment="Center" Width="540">
-            <StackPanel Orientation="Vertical">
+      Title="AddGoalPage"
+      Background="{StaticResource BgBrush}">
 
-                <TextBlock Text="TextBlock" FontSize="22" Height="28"
-                           TextAlignment="Center" FontWeight="Bold"
-                           Margin="0,10,0,20" />
+    <Grid Margin="24">
+        <Border Style="{StaticResource Card}"
+                HorizontalAlignment="Center"
+                Width="720"
+                Padding="22">
 
-                <ScrollViewer Height="800" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                    <StackPanel Orientation="Vertical" Background="LightGray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-                        <StackPanel Orientation="Vertical" Background="LightGray">
-                            <TextBox x:Name="GoalName" Text="Wpisz nazwę zadania" Height="32" Margin="0,10,0,0" />
-                            <TextBlock Text="Nazwa zadania" FontSize="14" Height="24"
-                                       TextAlignment="Center" Margin="0,5,0,10" />
-                        </StackPanel>
+                <!-- Header -->
+                <StackPanel Grid.Row="0" Margin="0,0,0,16">
+                    <TextBlock Text="Dodawanie celu"
+                               FontSize="22"
+                               FontWeight="Bold"
+                               TextAlignment="Center"/>
+                    <TextBlock Text="Uzupełnij dane celu. Na końcu dodasz taski."
+                               Foreground="{StaticResource MutedTextBrush}"
+                               TextAlignment="Center"
+                               Margin="0,6,0,0"/>
+                </StackPanel>
 
-                        <StackPanel Orientation="Vertical" Background="LightGray" Margin="0,5,0,10">
-                            <DatePicker x:Name="GoalDate" Height="32" />
-                            <TextBlock Text="Termin wykonania" FontSize="14" Height="24"
-                                       TextAlignment="Center" Margin="0,5,0,10" />
-                        </StackPanel>
+                <!-- Content -->
+                <Border Grid.Row="1"
+                        Background="#FFF9FAFB"
+                        BorderBrush="{StaticResource BorderBrushSoft}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="14">
 
-                        <StackPanel Orientation="Vertical" Background="LightGray" Margin="0,5,0,10" >
-                            <RichTextBox x:Name="GoalDescr" Height="100" MinWidth="490" HorizontalAlignment="Stretch">
-                                <FlowDocument>
-                                    <Paragraph Margin="0">
-                                        <Run Text="This is a sample RichTextBox. You can format text, insert images, and more." />
-                                    </Paragraph>
-                                </FlowDocument>
-                            </RichTextBox>
-                            <TextBlock Text="Opis" FontSize="14" Height="24"
-                                       TextAlignment="Center" Margin="0,5,0,10" />
-                        </StackPanel>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                                  HorizontalScrollBarVisibility="Disabled">
 
-                        <StackPanel Orientation="Vertical" Background="LightGray" Margin="0,5,0,20">
-                            <StackPanel Orientation="Horizontal">
-                                <ComboBox x:Name="GoalCat" Height="32" Width="250" Padding="6,4" FontSize="13">
-                                    <ComboBoxItem Content="Item1" IsSelected="True" />
-                                    <ComboBoxItem Content="Item2" />
-                                </ComboBox>
+                        <StackPanel>
 
-                                <TextBox Name="TextBox1" Height="25" Width="150" Margin="10,0,0,0" />
-                                <Button Name="AddButton" Width="70" Height="25" Content="Dodaj"
-                                        Click="AddButton_Click" />
+                            <!-- Nazwa -->
+                            <StackPanel Margin="0,0,0,12">
+                                <TextBlock Text="Nazwa celu" Margin="2,0,0,6"/>
+                                <TextBox x:Name="GoalName"
+                                         Style="{StaticResource ModernTextBox}"
+                                         Text=""/>
                             </StackPanel>
 
-                            <TextBlock Text="Kategoria" FontSize="14" Height="24"
-                                       TextAlignment="Center" Margin="0,5,0,10" />
+                            <!-- Termin -->
+                            <StackPanel Margin="0,0,0,12">
+                                <TextBlock Text="Termin wykonania" Margin="2,0,0,6"/>
+                                <DatePicker x:Name="GoalDate"
+                                            Style="{StaticResource ModernDatePicker}"/>
+                            </StackPanel>
+
+                            <!-- Opis -->
+                            <StackPanel Margin="0,0,0,12">
+                                <TextBlock Text="Opis" Margin="2,0,0,6"/>
+
+                                <Border Background="White"
+                                        BorderBrush="{StaticResource BorderBrushSoft}"
+                                        BorderThickness="1"
+                                        CornerRadius="10"
+                                        Padding="8">
+
+                                    <RichTextBox x:Name="GoalDescr"
+                                                 Height="140"
+                                                 BorderThickness="0"
+                                                 Background="Transparent">
+                                        <FlowDocument>
+                                            <Paragraph Margin="0">
+                                                <Run Text=""/>
+                                            </Paragraph>
+                                        </FlowDocument>
+                                    </RichTextBox>
+                                </Border>
+
+                                <TextBlock Text="Możesz wpisać krótkie szczegóły i notatki."
+                                           Foreground="{StaticResource MutedTextBrush}"
+                                           Margin="2,6,0,0"/>
+                            </StackPanel>
+
+                            <!-- Kategoria -->
+                            <StackPanel Margin="0,0,0,12">
+                                <TextBlock Text="Kategoria" Margin="2,0,0,6"/>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="12"/>
+                                        <ColumnDefinition Width="220"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- lista kategorii -->
+                                    <ComboBox x:Name="GoalCat"
+                                              Grid.Column="0"
+                                              Style="{StaticResource ModernComboBox}"/>
+
+                                    <!-- dodaj nową kategorię -->
+                                    <TextBox x:Name="TextBox1"
+                                             Grid.Column="2"
+                                             Style="{StaticResource ModernTextBox}"
+                                             Height="36"
+                                             VerticalAlignment="Center"/>
+
+                                    <Button x:Name="AddButton"
+                                            Grid.Column="4"
+                                            Content="Dodaj"
+                                            Style="{StaticResource SecondaryButton}"
+                                            Width="90"
+                                            Click="AddButton_Click"/>
+                                </Grid>
+
+                                <TextBlock Text="Wybierz kategorię lub dodaj nową."
+                                           Foreground="{StaticResource MutedTextBrush}"
+                                           Margin="2,6,0,0"/>
+                            </StackPanel>
+
+                            <!-- Priorytet -->
+                            <StackPanel Margin="0,0,0,8">
+                                <TextBlock Text="Priorytet" Margin="2,0,0,6"/>
+                                <ComboBox x:Name="GoalImportance"
+                                          Style="{StaticResource ModernComboBox}">
+                                    <ComboBoxItem Content="0" IsSelected="True"/>
+                                    <ComboBoxItem Content="1"/>
+                                    <ComboBoxItem Content="2"/>
+                                </ComboBox>
+                            </StackPanel>
+
                         </StackPanel>
+                    </ScrollViewer>
+                </Border>
 
-                        <StackPanel Orientation="Vertical" Background="LightGray" Margin="0,0,0,0">
-                            <ComboBox x:Name="GoalImportance" Height="32" Width="Auto" Padding="6,4" FontSize="13">
-                                <ComboBoxItem Content="0" IsSelected="True" />
-                                <ComboBoxItem Content="1" />
-                                <ComboBoxItem Content="2" />
-                            </ComboBox>
+                <!-- Footer -->
+                <StackPanel Grid.Row="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0,16,0,0">
 
-                            <TextBlock Text="Pryjorytet" FontSize="14" Height="24"
-                                       TextAlignment="Center" Margin="0,5,0,0" />
-                        </StackPanel>
+                    <Button Content="Dodaj cel i przejdź do tasków"
+                            Style="{StaticResource PrimaryButton}"
+                            Height="42"
+                            Width="260"
+                            Click="AskAboutTasks"/>
+                </StackPanel>
 
-                        <Button Content="Dodaj cel" HorizontalAlignment="Center"
-                                Width="200" Height="32" Margin="10,20,10,10" Click="AskAboutTasks"/>
-                        
-
-                    </StackPanel>
-                </ScrollViewer>
-            </StackPanel>
+            </Grid>
         </Border>
     </Grid>
 </Page>

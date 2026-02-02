@@ -2,13 +2,15 @@
 
 public enum Categories
 {
+    Wszystkie,
     Szkoła,
     Praca,
     Nauka,
-    Projek,
+    Projekt,
     Dom,
     Dieta,
     Rozwój,
     Rodzina,
-    Ogróg
+    Ogród,
+    Inne
 }

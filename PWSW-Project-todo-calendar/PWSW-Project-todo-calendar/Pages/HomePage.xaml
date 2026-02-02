@@ -6,94 +6,236 @@
       xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
       xmlns:userControl="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
       mc:Ignorable="d"
-      Title="HomePage">
+      Title="HomePage"
+      Background="{DynamicResource BgBrush}">
 
-    <Grid Background="#FFF7F7F7" Margin="24">
+    <Grid Margin="24">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- LEWA KOLUMNA -->
-        <Border Grid.Column="0" Background="LightGray" CornerRadius="6" Padding="10" Margin="0,0,12,0">
-            <StackPanel Width="Auto" Orientation="Vertical">
-                <TextBlock Text="Zadania" FontSize="20" Height="24" FontWeight="Heavy" TextAlignment="Center" />
+        <!-- ================= LEWA: lista z filtrami ================= -->
+        <Border Grid.Column="0"
+                Style="{DynamicResource Card}"
+                Margin="0,0,12,0"
+                Padding="16">
 
-                <Grid Background="LightGray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Margin="0,0,0,12">
+                    <TextBlock Text="Zadania"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               TextAlignment="Center"/>
+                    <TextBlock Text="Filtruj po dacie i kategorii."
+                               Foreground="{StaticResource MutedTextBrush}"
+                               TextAlignment="Center"
+                               Margin="0,6,0,0"/>
+                </StackPanel>
+
+                <!-- Zakres dat -->
+                <Grid Grid.Row="1" Margin="0,0,0,12">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="12"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Od" FontSize="14"  TextAlignment="Center" />
-                    <TextBlock Grid.Column="1" Grid.Row="0" Text="Do" FontSize="14" TextAlignment="Center" />
-                    <DatePicker Grid.Column="0" Grid.Row="1" x:Name="DateFrom" />
-                    <DatePicker Grid.Column="1" Grid.Row="1" x:Name="DateTo" />
+
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Od" Margin="2,0,0,6"/>
+                        <DatePicker x:Name="DateFrom"
+                                    Style="{DynamicResource ModernDatePicker}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <TextBlock Text="Do" Margin="2,0,0,6"/>
+                        <DatePicker x:Name="DateTo"
+                                    Style="{DynamicResource ModernDatePicker}"/>
+                    </StackPanel>
                 </Grid>
-                
-                <Grid Margin="5,5,5,0">
+
+                <!-- Kategoria -->
+                <StackPanel Grid.Row="2" Margin="0,0,0,12">
+                    <TextBlock Text="Kategoria" Margin="2,0,0,6" />
+                    <ComboBox x:Name="Categorie"
+                              Style="{DynamicResource ModernComboBox}"/>
+                </StackPanel>
+
+                <!-- Przyciski -->
+                <Grid Grid.Row="3" Margin="0,0,0,12">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Content="Szukaj" x:Name="FilterDateButton" Margin="0,0,5,0"/>
-                    <Button Grid.Column="1" Content="Wyczyść Filtr" x:Name="ClearDateButton" Margin="5,0,5,0" />
+
+                    <Button Grid.Column="0"
+                            Content="Szukaj"
+                            x:Name="FilterButton"
+                            Style="{DynamicResource PrimaryButton}"
+                            Height="40"
+                            Click="FilterButton_OnClick"/>
+
+                    <Button Grid.Column="2"
+                            Content="Wyczyść"
+                            x:Name="ClearButton"
+                            Style="{DynamicResource SecondaryButton}"
+                            Height="40"
+                            Click="ClearButton_OnClick"/>
                 </Grid>
 
-                <ScrollViewer Height="420" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                    <StackPanel x:Name="Goals" Orientation="Vertical">
-                        <!-- <userControl:GoalRowControl/>  -->
-                    </StackPanel>
-                </ScrollViewer>
-            </StackPanel>
-        </Border>
+                <!-- Lista celów -->
+                <Border Grid.Row="4"
+                        Background="#FFF9FAFB"
+                        BorderBrush="{DynamicResource BorderBrushSoft}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="10">
 
-        
-        <Border Grid.Column="1" Background="#00FFFFFF" CornerRadius="6" Padding="0" Margin="0,0,12,0">
-            <StackPanel Orientation="Vertical">
-                <Viewbox Stretch="Uniform">
-                    <Calendar/>
-                </Viewbox>
-
-                <Button Content="Więcej statystyk"
-                        Margin="0,12,0,0"
-                        HorizontalAlignment="Center"
-                        Width="136" Height="32"
-                        Click="GoToStats"/>
-                
-                <Border CornerRadius="10" Padding="16" Margin="0,5,0,0">
-                    <StackPanel>
-                        <lvc:PieChart x:Name="StatsPieHome"
-                                      Height="200"
-                                      LegendPosition="Top"
-                                      InitialRotation="-90"/>
-                        <TextBlock x:Name="DesignerPlaceholderHome"
-                                   Text="(Podgląd wykresu w runtime)"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"
-                                   Visibility="Collapsed"/>
-                    </StackPanel>
-                </Border>
-            </StackPanel>
-        </Border>
-
-        <!-- PRAWA KOLUMNA -->
-        <Border Grid.Column="2" Background="LightGray" CornerRadius="6" Padding="10">
-            <StackPanel Orientation="Vertical">
-                <TextBlock Text="Twój dzień" FontSize="20"  FontWeight="Heavy" TextAlignment="Center" Height="41" />
-
-                <ScrollViewer Height="470" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                    <StackPanel Orientation="Vertical" Background="LightGray">
-                        <StackPanel Orientation="Vertical">
-                            <!-- <userControl:GoalRowControl/>  -->
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                        <StackPanel x:Name="Goals" Orientation="Vertical">
+                            <!-- <userControl:GoalRowControl/> -->
                         </StackPanel>
-                    </StackPanel>
-                </ScrollViewer>
-            </StackPanel>
+                    </ScrollViewer>
+                </Border>
+
+            </Grid>
         </Border>
+
+        <!-- ================= ŚRODEK: kalendarz + statystyki ================= -->
+        <Border Grid.Column="1"
+                Style="{DynamicResource Card}"
+                Margin="0,0,12,0"
+                Padding="16">
+            
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Disabled"
+                          CanContentScroll="True">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Margin="0,0,0,12">
+                        <TextBlock Text="Kalendarz"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   TextAlignment="Center"/>
+                        <TextBlock Text="Wybierz dzień, aby zobaczyć cele."
+                                   Foreground="{StaticResource MutedTextBrush}"
+                                   TextAlignment="Center"
+                                   Margin="0,6,0,0"/>
+                    </StackPanel>
+
+                    <!-- Kalendarz w ramce -->
+                    <Border Grid.Row="1"
+                            Background="#FFF9FAFB"
+                            BorderBrush="{DynamicResource BorderBrushSoft}"
+                            BorderThickness="1"
+                            CornerRadius="12"
+                            Padding="10">
+
+                        <Viewbox Stretch="Uniform">
+                            <Calendar x:Name="Calendar"
+                                      SelectionMode="SingleDate"
+                                      SelectedDatesChanged="Calendar_OnSelectedDatesChanged"/>
+                        </Viewbox>
+                    </Border>
+
+                    <Button Grid.Row="2"
+                            Content="Więcej statystyk"
+                            Style="{DynamicResource SecondaryButton}"
+                            Height="40"
+                            Width="180"
+                            Margin="0,12,0,0"
+                            HorizontalAlignment="Center"
+                            Click="GoToStats"/>
+
+                    <!-- Wykres w pod-karcie -->
+                    <Border Grid.Row="3"
+                            Margin="0,12,0,0"
+                            Background="{DynamicResource CardBrush}"
+                            BorderBrush="{DynamicResource BorderBrushSoft}"
+                            BorderThickness="1"
+                            CornerRadius="12"
+                            Padding="14">
+
+                        <StackPanel>
+                            <TextBlock Text="Podsumowanie"
+                                       TextAlignment="Center"
+                                       FontSize="14"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,10"/>
+
+                            <lvc:PieChart x:Name="StatsPieHome"
+                                          Height="220"
+                                          LegendPosition="Top"
+                                          InitialRotation="-90"/>
+
+                            <TextBlock x:Name="DesignerPlaceholderHome"
+                                       Text="(Podgląd wykresu w runtime)"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Visibility="Collapsed"
+                                       Foreground="{StaticResource MutedTextBrush}"/>
+                        </StackPanel>
+                    </Border>
+
+                </Grid>
+                </ScrollViewer>
+        </Border>
+
+        <!-- ================= PRAWA: cele na dzień ================= -->
+        <Border Grid.Column="2"
+                Style="{DynamicResource Card}"
+                Padding="16">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Margin="0,0,0,12">
+                    <TextBlock Text="Twój dzień"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               TextAlignment="Center"/>
+                    <TextBlock Text="Lista celów dla wybranego dnia."
+                               Foreground="{StaticResource MutedTextBrush}"
+                               TextAlignment="Center"
+                               Margin="0,6,0,0"/>
+                </StackPanel>
+
+                <Border Grid.Row="1"
+                        Background="#FFF9FAFB"
+                        BorderBrush="{DynamicResource BorderBrushSoft}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="10">
+
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                        <StackPanel x:Name="GoalsByDay" Orientation="Vertical">
+                            <!-- <userControl:GoalRowControl/> -->
+                        </StackPanel>
+                    </ScrollViewer>
+                </Border>
+
+            </Grid>
+        </Border>
+
     </Grid>
 </Page>

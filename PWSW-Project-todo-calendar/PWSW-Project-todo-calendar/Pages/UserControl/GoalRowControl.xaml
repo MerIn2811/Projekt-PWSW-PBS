@@ -5,61 +5,193 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:PWSW_Project_todo_calendar.Pages.UserControl"
              mc:Ignorable="d"
-             d:DesignHeight="Auto" d:DesignWidth="350">
-    
-    <Border x:Name="Colour" Background="LightGray" CornerRadius="6" Padding="4" Margin="5">
-        <StackPanel Orientation="Vertical">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid Grid.Row="0" Margin="0,10,0,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
+             d:DesignHeight="90" d:DesignWidth="520">
 
-                    <CheckBox Grid.Column="0" x:Name="IsFinishedBox" Content="Goal" VerticalAlignment="Center" Checked="Checked" Unchecked="Checked"/>
-                    <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <TextBlock Text="Zaczęto:" TextAlignment="Center" FontWeight="SemiBold"/>
-                        <TextBlock x:Name="StartDateText" FontSize="9"/>
-                    </StackPanel>
-                    <StackPanel Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <TextBlock Text="Termin:" FontWeight="SemiBold" TextAlignment="Center" />
-                        <TextBlock x:Name="EndDateText" FontSize="9"/>
-                    </StackPanel>
-                    
-                    <TextBlock Grid.Column="3" x:Name="Category" Text="TextBlock" FontSize="10" TextAlignment="Center" VerticalAlignment="Center" />
-                    <Button Grid.Column="4" x:Name="SettingBtn" Content="⛭" Width="25" Height="25" Click="goGoalControlClick"  />
-                    
-                    <ToggleButton x:Name="ToggleTask"
-                                  Grid.Column="5"
-                                  Width="24" Height="24"
-                                  Content="▼"
-                                  Background="Transparent"
-                                  BorderBrush="Transparent"
-                                  VerticalAlignment="Center"
-                                  HorizontalAlignment="Center"
-                                  Checked="ToggleTask_Checked"
-                                  Unchecked="ToggleTask_Unchecked">
-                    </ToggleButton>
-                </Grid>
-                <Grid Grid.Row="1" Margin="5,5,5,0" Height="5">
-                    <ProgressBar x:Name="TasksFinishedBar" Minimum="0" Maximum="100" Value="75"></ProgressBar>
-                </Grid>
+    <Border x:Name="Colour"
+            Style="{StaticResource GoalRowBorderStyle}"
+            BorderBrush="{StaticResource BorderBrushSoft}"
+            BorderThickness="1"
+            CornerRadius="14"
+            Padding="12"
+            Margin="0,0,0,10">
+
+        <StackPanel>
+
+            <!-- GÓRA: wiersz informacji -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="34"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Done + nazwa celu -->
+                <CheckBox Grid.Column="0"
+                          x:Name="IsFinishedBox"
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          Checked="Checked"
+                          Unchecked="Checked"/>
+
+                <StackPanel Grid.Column="1" Margin="6,0,10,0" VerticalAlignment="Center">
+                    <TextBlock Text="Cel"
+                               FontSize="11"
+                               Foreground="{StaticResource MutedTextBrush}"/>
+                    <!-- Tu zostawiam Content CheckBoxa jako nazwę celu, bo masz to już pewnie w code-behind -->
+                    <TextBlock x:Name="Cel"
+                               FontSize="13"
+                               FontWeight="SemiBold"
+                               TextTrimming="CharacterEllipsis"/>
+                </StackPanel>
+
+                <!-- Start -->
+                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                    <TextBlock Text="Zaczęto"
+                               FontSize="11"
+                               Foreground="{StaticResource MutedTextBrush}"
+                               TextAlignment="Right"/>
+                    <TextBlock x:Name="StartDateText"
+                               FontSize="12"
+                               TextAlignment="Right"/>
+                </StackPanel>
+
+                <!-- End -->
+                <StackPanel Grid.Column="3" VerticalAlignment="Center" Margin="10,0,0,0">
+                    <TextBlock Text="Termin"
+                               FontSize="11"
+                               Foreground="{StaticResource MutedTextBrush}"
+                               TextAlignment="Right"/>
+                    <TextBlock x:Name="EndDateText"
+                               FontSize="12"
+                               TextAlignment="Right"/>
+                </StackPanel>
+
+                <!-- Category "chip" -->
+                <Border Grid.Column="4"
+                        VerticalAlignment="Center"
+                        Margin="12,0,10,0"
+                        Background="#FFEEF2FF"
+                        BorderBrush="#FFBFDBFE"
+                        BorderThickness="1"
+                        CornerRadius="999"
+                        Padding="10,4">
+                    <TextBlock x:Name="Category"
+                               Text="Kategoria"
+                               FontSize="12"
+                               Foreground="{StaticResource PrimaryBrush}"/>
+                </Border>
+
+                <!-- Settings button -->
+                <Button Grid.Column="5"
+                        x:Name="SettingBtn"
+                        Content="⛭"
+                        Width="32" Height="32"
+                        FontSize="14"
+                        Background="#00FFFFFF"
+                        BorderBrush="{StaticResource BorderBrushSoft}"
+                        BorderThickness="1"
+                        Cursor="Hand"
+                        Margin="0,0,8,0"
+                        Click="goGoalControlClick"
+                        VerticalAlignment="Center">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center"
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FFEEF2FF"/>
+                                    <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.85"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <!-- Toggle tasks -->
+                <ToggleButton  x:Name="ToggleTask"
+                              Grid.Column="6"
+                              Width="32" Height="32"
+                              Content="▼"
+                              FontSize="12"
+                              Background="#00FFFFFF"
+                              BorderBrush="{StaticResource BorderBrushSoft}"
+                              BorderThickness="1"
+                              Cursor="Hand"
+                              VerticalAlignment="Center"
+                              HorizontalAlignment="Center"
+                              Checked="ToggleTask_Checked"
+                              Unchecked="ToggleTask_Unchecked">
+                    <ToggleButton.Template>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <Border Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center"
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FFEEF2FF"/>
+                                    <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+                                </Trigger>
+                                <Trigger Property="IsChecked" Value="True">
+                                    <Setter Property="Content" Value="▲"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.85"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </ToggleButton.Template>
+                </ToggleButton>
+
             </Grid>
 
-            
+            <!-- Progress -->
+            <Grid Margin="0,10,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           Text="Postęp"
+                           Foreground="{StaticResource MutedTextBrush}"
+                           FontSize="11"
+                           Margin="2,0,0,6"/>
+
+                <ProgressBar Grid.Row="1"
+                             x:Name="TasksFinishedBar"
+                             Height="10"
+                             Minimum="0"
+                             Maximum="100"
+                             Value="75"
+                             Background="#FFE5E7EB"
+                             BorderBrush="#00FFFFFF"/>
+            </Grid>
+
+            <!-- Tasks panel -->
             <Border x:Name="TasksPanel"
-                    Margin="8,6,0,0"
-                    Padding="8"
-                    Background="#22FFFFFF"
-                    CornerRadius="6"
+                    Margin="0,12,0,0"
+                    Padding="10"
+                    Background="White"
+                    BorderBrush="{StaticResource BorderBrushSoft}"
+                    BorderThickness="1"
+                    CornerRadius="12"
                     Visibility="Collapsed">
                 <StackPanel x:Name="TaskPanel" Orientation="Vertical">
                     <!-- <local:TaskRowControl/> -->
@@ -67,5 +199,7 @@
             </Border>
 
         </StackPanel>
+
+        
     </Border>
 </UserControl>
